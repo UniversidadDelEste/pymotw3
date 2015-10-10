@@ -8,14 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyMOTW-3 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-10-06 13:35-0300\n"
+"PO-Revision-Date: 2015-10-10 11:18-0300\n"
+"Last-Translator: Roberto Betancur <tinolin2010@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: es\n"
 
 #: ../../source/cmd/index.rst:5
 msgid "cmd --- Line-oriented Command Processors"
@@ -39,12 +40,11 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:21
 msgid ""
-"A command interpreter created with ``cmd`` uses a loop to read all lines "
-"from its input, parse them, and then dispatch the command to an "
-"appropriate *command handler*. Input lines are parsed into two parts: the"
-" command, and any other text on the line. If the user enters ``foo bar``,"
-" and the interpreter class includes a method named ``do_foo()``, it is "
-"called with ``\"bar\"`` as the only argument."
+"The interpreter uses a loop to read all lines from its input, parse them, "
+"and then dispatch the command to an appropriate command handler. Input lines "
+"are parsed into two parts. The command, and any other text on the line. If "
+"the user enters a command ``foo bar``, and your class includes a method "
+"named :func:`do_foo()`, it is called with ``\"bar\"`` as the only argument."
 msgstr ""
 
 #: ../../source/cmd/index.rst:28
@@ -71,10 +71,10 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:50
 msgid ""
-"The first thing to notice is the command prompt, ``(Cmd)``. The prompt "
-"can be configured through the attribute ``prompt``. The prompt value is "
-"dynamic, and if a command handler changes the prompt attribute the new "
-"value is used to query for the next command."
+"The ``help`` command is built into :class:`Cmd`. With no arguments, it shows "
+"the list of commands available. If you include a command you want help on, "
+"the output is more verbose and restricted to details of that command, when "
+"available."
 msgstr ""
 
 #: ../../source/cmd/index.rst:65
@@ -108,12 +108,12 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:98
 msgid "Command Arguments"
-msgstr ""
+msgstr "Argumentos de Comandos"
 
 #: ../../source/cmd/index.rst:100
 msgid ""
-"This example includes a few enhancements to eliminate some of the "
-"annoyances and add help for the ``greet`` command."
+"This version of the example includes a few enhancements to eliminate some of "
+"the annoyances and add help for the greet command."
 msgstr ""
 
 #: ../../source/cmd/index.rst
@@ -151,17 +151,13 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:152
 msgid ""
-"In the previous example, the formatting of the help text leaves something"
-" to be desired. Since it comes from the docstring, it retains the "
-"indentation from the source file. The source could be changed to remove "
-"the extra white-space, but that would leave the application code looking "
-"poorly formatted. A better solution is to implement a help handler for "
-"the ``greet`` command, named ``help_greet()``. The help handler is called"
-" to produce help text for the named command."
-msgstr ""
-
-#: ../../source/cmd/index.rst
-msgid "cmd_do_help.py"
+"In the previous example, the formatting of the help text leaves something to "
+"be desired. Since it comes from the docstring, it retains the indentation "
+"from our source. We could edit the source to remove the extra white-space, "
+"but that would leave our application looking poorly formatted. An "
+"alternative solution is to implement a help handler for the greet command, "
+"named :func:`help_greet()`. When present, the help handler is called on to "
+"produce help text for the named command."
 msgstr ""
 
 #: ../../source/cmd/index.rst:165
@@ -183,8 +179,8 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:183
 msgid ""
-"``Cmd`` includes support for command completion based on the names of the"
-" commands with handler methods. The user triggers completion by hitting "
+":class:`Cmd` includes support for command completion based on the names of "
+"the commands with processor methods. The user triggers completion by hitting "
 "the tab key at an input prompt. When multiple completions are possible, "
 "pressing tab twice prints a list of the options."
 msgstr ""
@@ -199,14 +195,8 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:205
 msgid ""
-"Once the command is known, argument completion is handled by methods with"
-" the prefix ``complete_``. This allows new completion handlers to "
-"assemble a list of possible completions using arbitrary criteria (i.e., "
-"querying a database or looking at a file or directory on the file "
-"system). In this case, the program has a hard-coded set of \"friends\" "
-"who receive a less formal greeting than named or anonymous strangers. A "
-"real program would probably save the list somewhere, and read it once "
-"then cache the contents to be scanned as needed."
+"When there is input text, :func:`complete_greet()` returns a list of friends "
+"that match. Otherwise, the full list of friends is returned."
 msgstr ""
 
 #: ../../source/cmd/index.rst
@@ -231,13 +221,9 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:244
 msgid ""
-"``Cmd`` includes several methods that can be overridden as hooks for "
-"taking actions or altering the base class behavior. This example is not "
-"exhaustive, but contains many of the methods commonly useful."
-msgstr ""
-
-#: ../../source/cmd/index.rst
-msgid "cmd_illustrate_methods.py"
+"Cmd includes several methods that can be overridden as hooks for taking "
+"actions or altering the base class behavior. This example is not exhaustive, "
+"but contains many of the methods commonly useful."
 msgstr ""
 
 #: ../../source/cmd/index.rst:252
@@ -249,10 +235,10 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:256
 msgid ""
-"Each iteration through ``cmdloop()`` calls ``onecmd()`` to dispatch the "
-"command to its handler. The actual input line is parsed with "
-"``parseline()`` to create a tuple containing the command, and the "
-"remaining portion of the line."
+"Each iteration through :func:`cmdloop()` calls :func:`onecmd()` to dispatch "
+"the command to its processor. The actual input line is parsed with :func:"
+"`parseline()` to create a tuple containing the command, and the remaining "
+"portion of the line."
 msgstr ""
 
 #: ../../source/cmd/index.rst:261
@@ -274,14 +260,8 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:292
 msgid ""
-"In addition to the methods described earlier, there are several "
-"attributes for controlling command interpreters.  :attr:`prompt` can be "
-"set to a string to be printed each time the user is asked for a new "
-"command.  :attr:`intro` is the \"welcome\" message printed at the start "
-"of the program. ``cmdloop()`` takes an argument for this value, or it can"
-" be set on the class directly.  When printing help, the "
-":attr:`doc_header`, :attr:`misc_header`, :attr:`undoc_header`, and "
-":attr:`ruler` attributes are used to format the output."
+"In addition to the methods described above, there are several attributes for "
+"controlling command interpreters."
 msgstr ""
 
 #: ../../source/cmd/index.rst
@@ -313,8 +293,11 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:340
 msgid ""
-"This ``echo`` command implementation replaces the string ``$out`` in its "
-"argument with the output from the previous shell command."
+"To supplement the standard command processing, :class:`Cmd` includes 2 "
+"special command prefixes. A question mark (``?``) is equivalent to the built-"
+"in help command, and can be used in the same way. An exclamation point (``!"
+"``) maps to :func:`do_shell()`, and is intended for shelling out to run "
+"other commands, as in this example."
 msgstr ""
 
 #: ../../source/cmd/index.rst:375
@@ -330,17 +313,19 @@ msgstr ""
 
 #: ../../source/cmd/index.rst:397
 msgid ""
-"To have the program read a script file directly, a few other changes may "
-"be needed. Since :mod:`readline` interacts with the terminal/tty device, "
-"rather than the standard input stream, it should be disabled when the "
-"script is going to be reading from a file. Also, to avoid printing "
-"superfluous prompts, the prompt can be set to an empty string. This "
-"example shows how to open a file and pass it as input to a modified "
-"version of the ``HelloWorld`` example."
+"If you would rather have your program read the script file directly, a few "
+"other changes may be needed. Since :mod:`readline` interacts with the "
+"terminal/tty device, rather than the standard input stream, you should "
+"disable it if you know your script is going to be reading from a file. Also, "
+"to avoid printing superfluous prompts, you can set the prompt to an empty "
+"string. This example shows how to open a file and pass it as input to a "
+"modified version of the HelloWorld example."
 msgstr ""
 
-#: ../../source/cmd/index.rst
-msgid "cmd_file.py"
+#: ../../PyMOTW/cmd/index.rst:387
+msgid ""
+"With *use_rawinput* set to False and *prompt* set to an empty string, we can "
+"call the script on this input file:"
 msgstr ""
 
 #: ../../source/cmd/index.rst:409
