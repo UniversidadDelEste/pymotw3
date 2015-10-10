@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PyMOTW-3 \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: 2015-10-10 11:18-0300\n"
+"PO-Revision-Date: 2015-10-10 11:28-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,12 +38,14 @@ msgid ""
 "for interacting with the operating environment outside of the current "
 "program."
 msgstr ""
+"El módulo :mod: `sys` incluye una colección de servicios para probar o "
+"cambiar la configuración del intérprete en tiempo de ejecución y recursos "
+"para interactuar con el entorno operativo exterior al programa actual."
 
-#: ../../source/sys/index.rst:28
-msgid ":pydoc:`sys`"
-msgstr ""
+#: ../../PyMOTW/sys/index.rst:30
+msgid "`sys <http://docs.python.org/library/sys.html>`_"
+msgstr "`sys <http://docs.python.org/library/sys.html>`_"
 
-#: ../../source/sys/index.rst:30
-msgid ":ref:`Python 2 to 3 porting notes for sys <porting-sys>`"
-msgstr ""
-
+#: ../../PyMOTW/sys/index.rst:31
+msgid "The standard library documentation for this module."
+msgstr "La documentación de la librería estándard para este módulo."
