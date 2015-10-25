@@ -8,14 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyMOTW-3 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2015-10-06 13:35-0300\n"
+"PO-Revision-Date: 2015-10-24 06:11-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: ../../source/abc/index.rst:3
 msgid "abc --- Abstract Base Classes"
@@ -56,18 +58,18 @@ msgstr ""
 
 #: ../../source/abc/index.rst:31
 msgid ""
-"To start, define an abstract base class to represent the API of a set of "
-"plug-ins for saving and loading data.  Set the metaclass for the new base"
-" class to ``ABCMeta``, and use decorators to establish the public API for"
-" the class.  The following examples use ``abc_base.py``."
+"Let's start by defining an abstract base class to represent the API of a "
+"set of plugins for saving and loading data."
 msgstr ""
 
 #: ../../source/abc/index.rst
 msgid "abc_base.py"
 msgstr ""
 
-#: ../../source/abc/index.rst:43
-msgid "Registering a Concrete Class"
+#: ../../PyMOTW/abc/index.rst:43
+msgid ""
+"There are two ways to indicate that a concrete class implements an "
+"abstract: register the class with the abc or subclass directly from the abc."
 msgstr ""
 
 #: ../../source/abc/index.rst:45
@@ -86,10 +88,8 @@ msgstr ""
 
 #: ../../source/abc/index.rst:56
 msgid ""
-"In this example the ``RegisteredImplementation`` is derived from "
-"``LocalBaseClass``, but is registered as implementing the ``PluginBase`` "
-"API so ``issubclass()`` and ``isinstance()`` treat it as though it is "
-"derived from ``PluginBase``."
+"By subclassing directly from the base, we can avoid the need to register "
+"the class explicitly."
 msgstr ""
 
 #: ../../source/abc/index.rst:76
@@ -108,9 +108,14 @@ msgstr ""
 
 #: ../../source/abc/index.rst:85
 msgid ""
-"In this case, normal Python class management features are used to "
-"recognize ``SubclassImplementation`` as implementing the abstract "
-"``PluginBase``."
+"Dr. André Roberge `has described <http://us.pycon.org/2009/conference/"
+"schedule/event/47/>`_ using this capability to discover plugins by "
+"importing all of the modules in a directory dynamically and then looking at "
+"the subclass list to find the implementation classes."
+msgstr ""
+
+#: ../../PyMOTW/abc/index.rst:126
+msgid "Incomplete Implementations"
 msgstr ""
 
 #: ../../source/abc/index.rst:102
@@ -121,15 +126,25 @@ msgid ""
 "classes can do this)."
 msgstr ""
 
-#: ../../source/abc/index.rst
-msgid "abc_find_subclasses.py"
+#: ../../PyMOTW/abc/index.rst:158
+msgid ""
+"Although a concrete class must provide an implementation of an abstract "
+"methods, the abstract base class can also provide an implementation that "
+"can be invoked via ``super()``.  This lets you re-use common logic by "
+"placing it in the base class, but force subclasses to provide an overriding "
+"method with (potentially) custom logic."
 msgstr ""
 
 #: ../../source/abc/index.rst:111
 msgid ""
-"Even though ``abc_register()`` is imported, ``RegisteredImplementation`` "
-"is not among the list of subclasses because it is not actually derived "
-"from the base."
+"Since ``ABCWithConcreteImplementation`` is an abstract base class, it isn't "
+"possible to instantiate it to use it directly.  Subclasses *must* provide "
+"an override for ``retrieve_values()``, and in this case the concrete class "
+"massages the data before returning it at all."
+msgstr ""
+
+#: ../../PyMOTW/abc/index.rst:192
+msgid "Abstract Properties"
 msgstr ""
 
 #: ../../source/abc/index.rst:128
@@ -138,10 +153,8 @@ msgstr ""
 
 #: ../../source/abc/index.rst:130
 msgid ""
-"Forgetting to set the metaclass properly means the concrete "
-"implementations do not have their APIs enforced. To make it easier to set"
-" up the abstract class properly, a base class is provided that sets the "
-"metaclass automatically."
+"The ``Base`` class in the example cannot be instantiated because it has "
+"only an abstract version of the property getter method."
 msgstr ""
 
 #: ../../source/abc/index.rst
@@ -231,11 +244,14 @@ msgstr ""
 
 #: ../../source/abc/index.rst:261
 msgid ""
-"The concrete property must be defined the same way as the abstract "
-"property, as either read-write or read-only.  Overriding a read-write "
-"property in ``PartialImplementation`` with one that is read-only leaves "
-"the property read-only -- the property's setter method from the base "
-"class is not reused."
+"In addition to serving as detailed real-world examples of abstract base "
+"classes, Python's built-in types are automatically registered to these "
+"classes when you import :mod:`collections`. This means you can safely use "
+"``isinstance()`` to check parameters in your code to ensure that they "
+"support the API you need.  The base classes can also be used to define your "
+"own collection types, since many of them provide concrete implementations "
+"of the internals and only need a few methods overridden.  Refer to the "
+"standard library docs for collections for more details."
 msgstr ""
 
 #: ../../source/abc/index.rst:285
@@ -258,9 +274,8 @@ msgstr ""
 
 #: ../../source/abc/index.rst:297
 msgid ""
-"Although the class method is invoked on the class rather than an "
-"instance, it still prevents the class from being instantiated if it is "
-"not defined."
+"The collections module includes abstract base classes for several "
+"collection types."
 msgstr ""
 
 #: ../../source/abc/index.rst:317
@@ -283,17 +298,14 @@ msgstr ""
 
 #: ../../source/abc/index.rst:326
 msgid ""
-"`Wikipedia: Strategy Pattern "
-"<https://en.wikipedia.org/wiki/Strategy_pattern>`_ -- Description and "
-"examples of the strategy pattern, a common plug-in implementation "
-"pattern."
+"`Wikipedia: Strategy Pattern <http://en.wikipedia.org/wiki/"
+"Strategy_pattern>`_"
 msgstr ""
 
 #: ../../source/abc/index.rst:331
 msgid ""
-"`Dynamic Code Patterns: Extending Your Applications With Plugins "
-"<http://pyvideo.org/pycon-us-2013/dynamic-code-patterns-extending-your-"
-"application.html>`__ -- PyCon 2013 presentation by Doug Hellmann"
+"`Plugins and monkeypatching <http://us.pycon.org/2009/conference/schedule/"
+"event/47/>`_"
 msgstr ""
 
 #: ../../source/abc/index.rst:335

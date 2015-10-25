@@ -8,35 +8,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyMOTW-3 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2015-10-06 13:35-0300\n"
+"PO-Revision-Date: 2015-10-25 08:55-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.7.5\n"
 
-#: ../../source/unittest/index.rst:3
-msgid "unittest --- Automated Testing Framework"
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:3
+msgid "unittest -- Automated testing framework"
+msgstr "unittest -- Framework de automatizado de pruebas"
 
 #: ../../source/unittest/index.rst:8
 msgid "Automated testing framework"
-msgstr ""
+msgstr "Framework de automatizado de pruebas"
 
-#: ../../source/unittest/index.rst:10
+#: ../../PyMOTW/unittest/index.rst:9
+msgid "2.1"
+msgstr "2.1"
+
+#: ../../PyMOTW/unittest/index.rst:11
 msgid ""
-"Python's ``unittest`` module is based on the XUnit framework design by "
-"Kent Beck and Erich Gamma. The same pattern is repeated in many other "
-"languages, including C, Perl, Java, and Smalltalk. The framework "
-"implemented by ``unittest`` supports fixtures, test suites, and a test "
-"runner to enable automated testing."
+"Python's :mod:`unittest` module, sometimes referred to as PyUnit, is based "
+"on the XUnit framework design by Kent Beck and Erich Gamma. The same "
+"pattern is repeated in many other languages, including C, perl, Java, and "
+"Smalltalk. The framework implemented by :mod:`unittest` supports fixtures, "
+"test suites, and a test runner to enable automated testing for your code."
 msgstr ""
+"El modulo :mod:'unittest' de Python, a veces referido como PyUnit, esta "
+"basado en el framework Xunit diseñado por Kent Beck y Erich Gamma. El mismo "
+"patron es repetido en varios otros lenguajes, incluyendo C, perl, Java y "
+"Samalltalk. El framework implementado por mod:'unittest'  soporta fixtures, "
+"suites de testeo, y corredor de pruebas para permitir pruebas automatizadas "
+"para su código.-"
 
 #: ../../source/unittest/index.rst:17
 msgid "Basic Test Structure"
-msgstr ""
+msgstr "Estructura de una prueba básica"
 
 #: ../../source/unittest/index.rst:19
 msgid ""
@@ -47,78 +59,84 @@ msgid ""
 " a single ``test()`` method, which would fail if ``a`` is ever different "
 "from ``b``."
 msgstr ""
+"Pruebas, como esta defindo por :mod:'unittest', tiene dos partes: código "
+"para gestionar los \"fixtures\" de prueba, y la prueba en si. Pruebas "
+"individuales son creados por subclases TestCase y anulando o añadiendo "
+"métodos apropiados. Por ejemplo,"
 
 #: ../../source/unittest/index.rst
 msgid "unittest_simple.py"
 msgstr ""
+"En este caso, el SimplisticTest tiene un solo método test(), el cual sería "
+"un error si Verdadero es siempre Falso."
 
 #: ../../source/unittest/index.rst:31
 msgid "Running Tests"
-msgstr ""
+msgstr "Ejecutando pruebas"
 
-#: ../../source/unittest/index.rst:33
+#: ../../PyMOTW/unittest/index.rst:36
+msgid "The easiest way to run unittest tests is to include:"
+msgstr "La forma mas fácil de ejecutar las pruebas de unittest es incluir:"
+
+#: ../../PyMOTW/unittest/index.rst:43
 msgid ""
 "The easiest way to run unittest tests is use the automatic discovery "
 "available through the command line interface."
 msgstr ""
+"al final de cada archivo de prueba, entonces simplemente ejecuta el script "
+"directamente desde la linea de comandos:"
 
 #: ../../source/unittest/index.rst:52
 msgid ""
-"This abbreviated output includes the amount of time the tests took, along"
-" with a status indicator for each test (the \".\" on the first line of "
-"output means that a test passed). For more detailed test results, include"
-" the ``-v`` option."
+"This abbreviated output includes the amount of time the tests took, along "
+"with a status indicator for each test (the \".\" on the first line of "
+"output means that a test passed). For more detailed test results, include "
+"the -v option:"
 msgstr ""
+"Esta salida abreviada incluye la cantidad de tiempo que las pruebas "
+"llevaron, junto con un indicador de estado para cada prueba (el \".\" En la "
+"primera línea de salida significa que una prueba superada). Para los "
+"resultados de pruebas más detalladas, incluya la opción -v:"
 
 #: ../../source/unittest/index.rst:75
 msgid "Test Outcomes"
-msgstr ""
+msgstr "Resultados de pruebas"
 
-#: ../../source/unittest/index.rst:77
-msgid "Tests have 3 possible outcomes, described in :table:`Test Case Outcomes`."
-msgstr ""
-
-#: ../../source/unittest/index.rst
-msgid "Test Case Outcomes"
-msgstr ""
-
-#: ../../source/unittest/index.rst:82
-msgid "Outcome"
-msgstr ""
-
-#: ../../source/unittest/index.rst:82
-msgid "Description"
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:86
+msgid "Tests have 3 possible outcomes:"
+msgstr "Las pruebas tienen 3 posibles resultados:"
 
 #: ../../source/unittest/index.rst:84
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 #: ../../source/unittest/index.rst:84
 msgid "The test passes."
-msgstr ""
+msgstr "Las pruebas han sido superadas."
 
 #: ../../source/unittest/index.rst:85
 msgid "FAIL"
-msgstr ""
+msgstr "FAIL"
 
 #: ../../source/unittest/index.rst:85
 msgid "The test does not pass, and raises an AssertionError exception."
-msgstr ""
+msgstr "La prueba no ha sido superada, y tira una excepción AssertionError."
 
 #: ../../source/unittest/index.rst:86
 msgid "ERROR"
-msgstr ""
+msgstr "ERROR"
 
-#: ../../source/unittest/index.rst:86
-msgid "The test raises any exception other than AssertionError."
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:95
+msgid "The test raises an exception other than AssertionError."
+msgstr "La prueba genera una excepción distinta de AssertionError."
 
 #: ../../source/unittest/index.rst:89
 msgid ""
 "There is no explicit way to cause a test to \"pass\", so a test's status "
 "depends on the presence (or absence) of an exception."
 msgstr ""
+"No hay manera explícita de causar una prueba para \"pass\", por lo que el "
+"estado de una prueba depende de la presencia (o ausencia) de una excepción."
 
 #: ../../source/unittest/index.rst
 msgid "unittest_outcomes.py"
@@ -137,6 +155,8 @@ msgid ""
 "output to look at the code to figure out the meaning of the failed test, "
 "though."
 msgstr ""
+"Cuando una prueba falla o genera un error, el rastreo es incluido en la "
+"salida."
 
 #: ../../source/unittest/index.rst
 msgid "unittest_failwithmessage.py"
@@ -144,21 +164,43 @@ msgstr ""
 
 #: ../../source/unittest/index.rst:141
 msgid ""
-"To make it easier to understand the nature of a test failure, the "
-"``fail*()`` and ``assert*()`` methods all accept an argument ``msg``, "
+"In the example above, :func:`testFail()` fails and the traceback shows the "
+"line with the failure code. It is up to the person reading the test output "
+"to look at the code to figure out the semantic meaning of the failed test, "
+"though. To make it easier to understand the nature of a test failure, the :"
+"func:`fail*()` and :func:`assert*()` methods all accept an argument *msg*, "
 "which can be used to produce a more detailed error message."
 msgstr ""
+"En el ejemplo anterior, :func:'testFail()' falla y el rastreo muestra la "
+"linea con el código que genera la falla. Corresponde a la persona que lee "
+"la salida de prueba a mirar el código y averiguar el significado semántico "
+"de la prueba fallida, aunque para que sea mas fácil de entender la "
+"naturaleza de la falla de la prueba, todos los métodos func:'fail*()' y "
+"func:'assert*()' aceptan un argumento *msg*, que puede ser usado para "
+"producir un mensaje de error mas detallado.-"
 
 #: ../../source/unittest/index.rst:173
 msgid "Asserting Truth"
-msgstr ""
+msgstr "Afirmando Verdad"
 
 #: ../../source/unittest/index.rst:175
 msgid ""
-"Most tests assert the truth of some condition. There are two different "
+"Most tests assert the truth of some condition. There are a few different "
 "ways to write truth-checking tests, depending on the perspective of the "
-"test author and the desired outcome of the code being tested."
+"test author and the desired outcome of the code being tested. If the code "
+"produces a value which can be evaluated as true, the methods :func:"
+"`failUnless()` and :func:`assertTrue()` should be used. If the code "
+"produces a false value, the methods :func:`failIf()` and :func:"
+"`assertFalse()` make more sense."
 msgstr ""
+"La mayoría de las pruebas afirman la verdad de alguna condición. Hay "
+"diferentes maneras de escribir pruebas de chequeo de verdad, dependiendo de "
+"la perspectiva del autor de las pruebas y de la salida deseada del código "
+"que esta siendo testeado.  Si el código produce un valor que puede ser "
+"evaluado como verdadero, los metodos :func:'failUnless()' y "
+"func:'assertTrue()' debieran ser usados. Si el código produce un valor "
+"falso, los métodos :func:'failIf()' y :func:'assertFalse()' tienen mas "
+"sentido."
 
 #: ../../source/unittest/index.rst
 msgid "unittest_truth.py"
@@ -173,44 +215,49 @@ msgstr ""
 
 #: ../../source/unittest/index.rst:207
 msgid "Testing Equality"
-msgstr ""
+msgstr "Comprobación de igualdad"
 
 #: ../../source/unittest/index.rst:209
 msgid ""
-"As a special case, ``unittest`` includes methods for testing the equality"
-" of two values."
+"As a special case, :mod:`unittest` includes methods for testing the "
+"equality of two values."
 msgstr ""
+"Como un caso especial, :mod:'unittest' incluye métodos para comprobar la "
+"igualdad de dos valores"
 
-#: ../../source/unittest/index.rst
-msgid "unittest_equality.py"
-msgstr ""
-
-#: ../../source/unittest/index.rst:216
+#: ../../PyMOTW/unittest/index.rst:243
 msgid ""
-"When they fail, these special test methods produce error messages "
-"including the values being compared."
+"These special tests are handy, since the values being compared appear in "
+"the failure message when a test fails."
 msgstr ""
+"Estas pruebas especiales son muy útiles, ya que los valores comparados "
+"aparecen en el mensaje de error cuando una prueba falla."
+
+#: ../../PyMOTW/unittest/index.rst:251
+msgid "And when these tests are run:"
+msgstr "Y cuando se ejecutan estas pruebas:"
 
 #: ../../source/unittest/index.rst:260
 msgid "Almost Equal?"
-msgstr ""
+msgstr "Casi igual?"
 
 #: ../../source/unittest/index.rst:262
 msgid ""
-"In addition to strict equality, it is possible to test for near equality "
-"of floating point numbers using ``assertAlmostEqual()`` and "
-"``assertNotAlmostEqual()``."
+"In addition to strict equality, it is possible to test for near equality of "
+"floating point numbers using :func:`failIfAlmostEqual()` and :func:"
+"`failUnlessAlmostEqual()`."
 msgstr ""
-
-#: ../../source/unittest/index.rst
-msgid "unittest_almostequal.py"
-msgstr ""
+"Además de estricta igualdad, es posible usar pruebas de aproximamiento para "
+"números de punto flotante usando :func:'failIfAlmostEqual()' y :"
+"func:'failUnlessAlmostEqual()'"
 
 #: ../../source/unittest/index.rst:270
 msgid ""
 "The arguments are the values to be compared, and the number of decimal "
 "places to use for the test."
 msgstr ""
+"Los argumentos son los valores a ser comparados, y el numero de lugares "
+"decimales a usar para la prueba."
 
 #: ../../source/unittest/index.rst:299
 msgid "Containers"
@@ -249,19 +296,25 @@ msgstr ""
 
 #: ../../source/unittest/index.rst:498
 msgid "Testing for Exceptions"
-msgstr ""
+msgstr "Pruebas para excepciones"
 
 #: ../../source/unittest/index.rst:500
 msgid ""
-"As previously mentioned, if a test raises an exception other than "
-"``AssertionError`` it is treated as an error. This is very useful for "
-"uncovering mistakes while modifying code that has existing test coverage."
-" There are circumstances, however, in which the test should verify that "
-"some code does produce an exception. For example, if an invalid value is "
-"given to an attribute of an object. In such cases, ``assertRaises()`` "
-"makes the code more clear than trapping the exception in the test. "
-"Compare these two tests:"
+"As previously mentioned, if a test raises an exception other than :ref:"
+"`AssertionError <exceptions-AssertionError>` it is treated as an error. "
+"This is very useful for uncovering mistakes while you are modifying code "
+"which has existing test coverage. There are circumstances, however, in "
+"which you want the test to verify that some code does produce an exception. "
+"For example, if an invalid value is given to an attribute of an object. In "
+"such cases, :func:`failUnlessRaises()` makes the code more clear than "
+"trapping the exception yourself. Compare these two tests:"
 msgstr ""
+"Como se menciono antes, si una prueba lanza una excepción distinta de :"
+"ref:'AssertionError <exceptions-AssertionError>' se trata como un error. "
+"Esto es muy útil para para descubrir errores mientras se esta modificando "
+"código que ya cuenta con coberturas de pruebas. Hay circunstancias, sin "
+"embargo, en la cual se desea que la prueba para verificar  algún código no "
+"produzca una excepción."
 
 #: ../../source/unittest/index.rst
 msgid "unittest_exception.py"
@@ -269,23 +322,36 @@ msgstr ""
 
 #: ../../source/unittest/index.rst:513
 msgid ""
-"The results for both are the same, but the second test using "
-"``assertRaises()`` is more succinct."
+"The results for both are the same, but the second test using :func:"
+"`failUnlessRaises()` is more succinct."
 msgstr ""
+"El resultado de ambas son iguales, pero la segunda prueba usando :"
+"func:'failUnlessRaises()' es mas sucinta."
 
 #: ../../source/unittest/index.rst:536
 msgid "Test Fixtures"
-msgstr ""
+msgstr "Pruebas accesorias"
 
 #: ../../source/unittest/index.rst:538
 msgid ""
-"Fixtures are outside resources needed by a test. For example, tests for "
-"one class may all need an instance of another class that provides "
-"configuration settings or another shared resource. Other test fixtures "
-"include database connections and temporary files (many people would argue"
-" that using external resources makes such tests not \"unit\" tests, but "
-"they are still tests and still useful)."
+"Fixtures are resources needed by a test. For example, if you are writing "
+"several tests for the same class, those tests all need an instance of that "
+"class to use for testing. Other test fixtures include database connections "
+"and temporary files (many people would argue that using external resources "
+"makes such tests not \"unit\" tests, but they are still tests and still "
+"useful).  :class:`TestCase` includes a special hook to configure and clean "
+"up any fixtures needed by your tests. To configure the fixtures, override :"
+"func:`setUp()`. To clean up, override :func:`tearDown()`."
 msgstr ""
+"Accesorios son recursos necesitados por el test. Por ejemplo, si estas "
+"escribiendo varias pruebas para la misma clase, todas necesitan una "
+"instancia de la clase usada por la prueba. Otras pruebas accesorias "
+"incluyen conexión a base de datos y archivos temporales (muchas personas "
+"podrían argumentar que el uso de recursos externos hace que tales pruebas "
+"no sean \"unit\"test, pero no dejan de ser pruebas y siendo útiles). :"
+"class:'TestCase' incluyen un gancho especial para configurar y limpiar los "
+"accesorios necesarios para las pruebas. Para limpiar, sobrescriba :"
+"func:'tearDown()'"
 
 #: ../../source/unittest/index.rst:545
 msgid ""
@@ -298,37 +364,44 @@ msgid ""
 "expensive setup operations for all of the tests within a module, use the "
 "module-level functions ``setUpModule()`` and ``tearDownModule()``."
 msgstr ""
+"Cuando se ejecuta la prueba de muestra, se puede ver el orden de ejecución "
+"de los accesorios y los métodos de la prueba"
 
-#: ../../source/unittest/index.rst
-msgid "unittest_fixtures.py"
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:398
+msgid "Test Suites"
+msgstr "Conjunto de pruebas"
 
 #: ../../source/unittest/index.rst:559
 msgid ""
-"When this sample test is run, the order of execution of the fixture and "
-"test methods is apparent."
+"The standard library documentation describes how to organize test suites "
+"manually. I generally do not use test suites directly, because I prefer to "
+"build the suites automatically (these are automated tests, after all).  "
+"Automating the construction of test suites is especially useful for large "
+"code bases, in which related tests are not all in the same place. Tools "
+"such as nose make it easier to manage tests when they are spread over "
+"multiple files and directories."
 msgstr ""
+"La documentación de la biblioteca estándar describe cómo organizar "
+"conjuntos de pruebas manualmente. Yo generalmente no uso los conjuntos de "
+"pruebas directamente, porque prefiero construir conjuntos de pruebas de "
+"forma automática (estas son pruebas automatizadas, después de todo). La "
+"automatización de la construcción de los conjuntos de pruebas es "
+"especialmente útil para bases de código grandes, en el que las pruebas "
+"relacionadas no están todas en el mismo lugar. Herramientas como la  \"nariz"
+"\" hace que sea mas fácil de manejar las pruebas cuando están repartidas en "
+"varios archivos y directorios."
 
-#: ../../source/unittest/index.rst:592
-msgid ""
-"The ``tearDown`` methods may not all be invoked if there are errors in "
-"the process of cleaning up fixtures. To ensure that a fixture is always "
-"released correctly, use ``addCleanup()``."
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:411
+msgid "`unittest <http://docs.python.org/lib/module-unittest.html>`_"
+msgstr "`unittest <http://docs.python.org/lib/module-unittest.html>`_"
 
-#: ../../source/unittest/index.rst
-msgid "unittest_addcleanup.py"
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:411
+msgid "Standard library documentation for this module."
+msgstr "Documentación de la biblioteca estándar para este módulo"
 
-#: ../../source/unittest/index.rst:600
-msgid ""
-"This example test creates a temporary directory and then uses "
-":mod:`shutil` to clean it up when the test is done."
-msgstr ""
-
-#: ../../source/unittest/index.rst:630
-msgid "Repeating Tests with Different Inputs"
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:415
+msgid ":mod:`doctest`"
+msgstr ":mod:`doctest`"
 
 #: ../../source/unittest/index.rst:632
 msgid ""
@@ -340,95 +413,21 @@ msgid ""
 " ``subTest()`` to create a context for a test within a test method. If "
 "the test fails, the failure is reported and the remaining tests continue."
 msgstr ""
+"Un medio alternativo para la realización de pruebas incorporados en "
+"docstrings o archivos de documentación externos."
 
-#: ../../source/unittest/index.rst
-msgid "unittest_subtest.py"
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:418
+msgid "`nose <http://somethingaboutorange.com/mrl/projects/nose/>`_"
+msgstr "`nose <http://somethingaboutorange.com/mrl/projects/nose/>`_"
 
-#: ../../source/unittest/index.rst:645
-msgid ""
-"In this example, the ``test_combined()`` method never runs the assertions"
-" for the patterns ``'c'`` and ``'d'``. The ``test_with_subtest()`` method"
-" does, and correctly reports the additional failure. Note that the test "
-"runner still considers there to only be two test cases, even though there"
-" are three failures reported."
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:418
+msgid "A more sophisticated test manager."
+msgstr "Un manejador de pruebas mas sofisticado"
 
-#: ../../source/unittest/index.rst:694
-msgid "Skipping Tests"
-msgstr ""
+#: ../../PyMOTW/unittest/index.rst:420
+msgid "`unittest2 <http://pypi.python.org/pypi/unittest2>`_"
+msgstr "`unittest2 <http://pypi.python.org/pypi/unittest2>`_"
 
-#: ../../source/unittest/index.rst:696
-msgid ""
-"It is frequently useful to be able to skip a test if some external "
-"condition is not met. For example, when writing tests to check behavior "
-"of a library under a specific version of Python there is no reason to run"
-" those tests under other versions of Python. Test classes and methods can"
-" be decorated with ``skip()`` to always skip the tests. The decorators "
-"``skipIf()`` and ``skipUnless()`` can be used to check a condition before"
-" skipping."
-msgstr ""
-
-#: ../../source/unittest/index.rst
-msgid "unittest_skip.py"
-msgstr ""
-
-#: ../../source/unittest/index.rst:708
-msgid ""
-"For complex conditions that are difficult to express in a single "
-"expression to be passed to ``skipIf()`` or ``skipUnless()``, a test case "
-"may raise ``SkipTest`` directly to cause the test to be skipped."
-msgstr ""
-
-#: ../../source/unittest/index.rst:737
-msgid "Ignoring Failing Tests"
-msgstr ""
-
-#: ../../source/unittest/index.rst:739
-msgid ""
-"Rather than deleting tests that are persistently broken, they can be "
-"marked with the ``expectedFailure()`` decorator so the failure is "
-"ignored."
-msgstr ""
-
-#: ../../source/unittest/index.rst
-msgid "unittest_expectedfailure.py"
-msgstr ""
-
-#: ../../source/unittest/index.rst:747
-msgid ""
-"If a test that is expected to fail does in fact pass, that condition is "
-"treated as a special sort of failure and reported as an \"unexpected "
-"success\"."
-msgstr ""
-
-#: ../../source/unittest/index.rst:776
-msgid ":pydoc:`unittest`"
-msgstr ""
-
-#: ../../source/unittest/index.rst:778
-msgid ""
-":mod:`doctest` -- An alternate means of running tests embedded in "
-"docstrings or external documentation files."
-msgstr ""
-
-#: ../../source/unittest/index.rst:781
-msgid ""
-"`nose <https://nose.readthedocs.io/en/latest/>`_ -- Third-party test "
-"runner with sophisticated discovery features."
-msgstr ""
-
-#: ../../source/unittest/index.rst:784
-msgid ""
-"`pytest <http://doc.pytest.org/en/latest/>`_ -- A popular third-party "
-"test runner with support for distributed execution and an alternate "
-"fixture management system."
-msgstr ""
-
-#: ../../source/unittest/index.rst:788
-msgid ""
-"`testrepository <http://testrepository.readthedocs.io/en/latest/>`_ -- "
-"Third-party test runner used by the OpenStack project, with support for "
-"parallel execution andtracking failures."
-msgstr ""
-
+#: ../../PyMOTW/unittest/index.rst:421
+msgid "Ongoing improvements to :mod:`unittest`"
+msgstr "Mejoras en curso para :mod:'unittest'"
