@@ -8,30 +8,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyMOTW-3 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2015-10-06 13:35-0300\n"
+"PO-Revision-Date: 2015-11-02 18:15-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.8.6\n"
 
-#: ../../source/array/index.rst:3
-msgid "array --- Sequence of Fixed-type Data"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:3
+msgid "array -- Sequence of fixed-type data"
+msgstr "array - Secuencia de datos de tipo fijo"
 
 #: ../../source/array/index.rst:8
 msgid "Manage sequences of fixed-type numerical data efficiently."
 msgstr ""
+"Administrar secuencias de datos numéricos de tipo fijo de manera eficiente."
 
-#: ../../source/array/index.rst:10
-msgid ""
-"The ``array`` module defines a sequence data structure that looks very "
-"much like a ``list``, except that all of the members have to be of the "
-"same primitive type. The types supported are all numeric or other fixed-"
-"size primitive types such as bytes."
-msgstr ""
+#: ../../PyMOTW/array/index.rst:9
+msgid "1.4 and later"
+msgstr "1.4 y posterior"
 
 #: ../../source/array/index.rst:15
 msgid ""
@@ -43,75 +42,89 @@ msgstr ""
 #: ../../source/array/index.rst
 msgid "Type Codes for array Members"
 msgstr ""
+"El módulo :mod:`array` define una estructura de datos de la secuencia que "
+"se parece mucho a una :class:`list` excepto que todos los miembros tienen "
+"que ser del mismo tipo. Los tipos soportados son todos los tipos primitivos "
+"de tamaño fijo numéricos u otros tales como bytes."
 
 #: ../../source/array/index.rst:23
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 #: ../../source/array/index.rst:24
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: ../../source/array/index.rst:25
 msgid "Minimum size (bytes)"
-msgstr ""
+msgstr "Tamaño mínimo (bytes)"
 
-#: ../../source/array/index.rst:26
-msgid "``b``"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:19
+msgid "``c``"
+msgstr "``c``"
 
-#: ../../source/array/index.rst:27 ../../source/array/index.rst:30
-msgid "int"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:19
+msgid "character"
+msgstr "carácter "
 
 #: ../../source/array/index.rst:28 ../../source/array/index.rst:31
 msgid "1"
-msgstr ""
+msgstr "1"
 
-#: ../../source/array/index.rst:29
+#: ../../PyMOTW/array/index.rst:21
+msgid "``b``"
+msgstr "``b``"
+
+#: ../../PyMOTW/array/index.rst:21 ../../PyMOTW/array/index.rst:23
+#: ../../PyMOTW/array/index.rst:27 ../../PyMOTW/array/index.rst:29
+#: ../../PyMOTW/array/index.rst:31 ../../PyMOTW/array/index.rst:35
+msgid "int"
+msgstr "entero"
+
+#: ../../PyMOTW/array/index.rst:23
 msgid "``B``"
-msgstr ""
+msgstr "``B``"
 
-#: ../../source/array/index.rst:32
+#: ../../PyMOTW/array/index.rst:25
+msgid "``u``"
+msgstr "``u``"
+
+#: ../../PyMOTW/array/index.rst:25
+msgid "Unicode character"
+msgstr "Carácter unicode"
+
+#: ../../PyMOTW/array/index.rst:25
+msgid "2 or 4 (build-dependent)"
+msgstr "2 o 4 (constructor dependiente)"
+
+#: ../../PyMOTW/array/index.rst:27
 msgid "``h``"
-msgstr ""
+msgstr "``h``"
 
-#: ../../source/array/index.rst:33
-msgid "signed short"
-msgstr ""
-
-#: ../../source/array/index.rst:34 ../../source/array/index.rst:37
-#: ../../source/array/index.rst:40 ../../source/array/index.rst:43
+#: ../../PyMOTW/array/index.rst:27 ../../PyMOTW/array/index.rst:29
+#: ../../PyMOTW/array/index.rst:31 ../../PyMOTW/array/index.rst:33
 msgid "2"
-msgstr ""
+msgstr "2"
 
-#: ../../source/array/index.rst:35
+#: ../../PyMOTW/array/index.rst:29
 msgid "``H``"
-msgstr ""
+msgstr "``H``"
 
-#: ../../source/array/index.rst:36
-msgid "unsigned short"
-msgstr ""
-
-#: ../../source/array/index.rst:38
+#: ../../PyMOTW/array/index.rst:31
 msgid "``i``"
-msgstr ""
-
-#: ../../source/array/index.rst:39
-msgid "signed int"
-msgstr ""
+msgstr "``i``"
 
 #: ../../source/array/index.rst:41
 msgid "``I``"
-msgstr ""
+msgstr "``I``"
 
-#: ../../source/array/index.rst:42
-msgid "unsigned int"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:33 ../../PyMOTW/array/index.rst:37
+msgid "long"
+msgstr "largo"
 
 #: ../../source/array/index.rst:44
 msgid "``l``"
-msgstr ""
+msgstr "``l``"
 
 #: ../../source/array/index.rst:45
 msgid "signed long"
@@ -120,11 +133,11 @@ msgstr ""
 #: ../../source/array/index.rst:46 ../../source/array/index.rst:49
 #: ../../source/array/index.rst:58
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../source/array/index.rst:47
 msgid "``L``"
-msgstr ""
+msgstr "``L``"
 
 #: ../../source/array/index.rst:48
 msgid "unsigned long"
@@ -153,44 +166,45 @@ msgstr ""
 
 #: ../../source/array/index.rst:56
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
 #: ../../source/array/index.rst:57
 msgid "float"
-msgstr ""
+msgstr "flotante"
 
 #: ../../source/array/index.rst:59
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
-#: ../../source/array/index.rst:60
-msgid "double float"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:41
+msgid "8"
+msgstr "8"
 
-#: ../../source/array/index.rst:64
-msgid "Initialization"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:46
+msgid "array Initialization"
+msgstr "Inicialización de array"
 
 #: ../../source/array/index.rst:66
 msgid ""
-"An ``array`` is instantiated with an argument describing the type of data"
-" to be allowed, and possibly an initial sequence of data to store in the "
-"array."
+"An :class:`array` is instantiated with an argument describing the type of "
+"data to be allowed, and possibly an initial sequence of data to store in "
+"the array."
 msgstr ""
-
-#: ../../source/array/index.rst
-msgid "array_string.py"
-msgstr ""
+"Un :class:`array` se instancia con un argumento que describe el tipo de "
+"datos que se permite, y posiblemente una secuencia inicial de datos para "
+"almacenar en la matriz."
 
 #: ../../source/array/index.rst:74
 msgid ""
 "In this example, the array is configured to hold a sequence of bytes and "
 "is initialized with a simple byte string."
 msgstr ""
+"En este ejemplo, la matriz está configurada para contener una secuencia de "
+"bytes y se inicializa con una cadena simple."
 
 #: ../../source/array/index.rst:94
 msgid "Manipulating Arrays"
-msgstr ""
+msgstr "La manipulación de matrices"
 
 #: ../../source/array/index.rst:96
 msgid ""
@@ -204,13 +218,15 @@ msgstr ""
 
 #: ../../source/array/index.rst:103
 msgid ""
-"The supported operations include slicing, iterating, and adding elements "
-"to the end."
+"An :class:`array` can be extended and otherwise manipulated in the same "
+"ways as other Python sequences."
 msgstr ""
+"Un :class:`array` se puede ampliar y manipulado de otro modo en la misma "
+"forma que otras secuencias de Python."
 
 #: ../../source/array/index.rst:124
 msgid "Arrays and Files"
-msgstr ""
+msgstr "Matrices y archivos"
 
 #: ../../source/array/index.rst:126
 msgid ""
@@ -228,61 +244,60 @@ msgid ""
 "the binary file, versus reading it into a new array and converting the "
 "bytes to the appropriate types."
 msgstr ""
+"El contenido de un array se pueden escribir y leer de archivos mediante "
+"métodos incorporados codificados de manera eficiente para tal fin."
 
 #: ../../source/array/index.rst:151
 msgid ""
 "``tofile()`` uses ``tobytes()`` to format the data, and ``fromfile()`` "
 "uses ``frombytes()`` to convert it back to an array instance."
 msgstr ""
+"Este ejemplo ilustra la lectura de los datos \"en bruto\", directamente "
+"desde el archivo binario, frente a la lectura en una nueva matriz y la "
+"conversión de los bytes para los tipos adecuados."
 
-#: ../../source/array/index.rst
-msgid "array_tobytes.py"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:131
+msgid "Alternate Byte Ordering"
+msgstr "Orden alternativo de byte"
 
 #: ../../source/array/index.rst:158
 msgid ""
 "Both ``tobytes()`` and ``frombytes()`` work on byte strings, not Unicode "
 "strings."
 msgstr ""
+"Si los datos de la matriz no está en el orden de bytes nativo, o necesita "
+"ser intercambiado antes de ser escrita en un archivo destinado a un sistema "
+"con un orden de bytes diferentes, es fácil de convertir toda la matriz sin "
+"iterar sobre los elementos de Python ."
 
-#: ../../source/array/index.rst:176
-msgid "Alternative Byte Ordering"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:164
+msgid "`array <http://docs.python.org/library/array.html>`_"
+msgstr "`array <http://docs.python.org/library/array.html>`_"
 
-#: ../../source/array/index.rst:178
-msgid ""
-"If the data in the array is not in the native byte order, or if the data "
-"needs to be swapped before being sent to a system with a different byte "
-"order (or over the network), it is possible to convert the entire array "
-"without iterating over the elements from Python."
-msgstr ""
+#: ../../PyMOTW/array/index.rst:164
+msgid "The standard library documentation for this module."
+msgstr "La documentación de la biblioteca estándar para este módulo."
 
-#: ../../source/array/index.rst
-msgid "array_byteswap.py"
-msgstr ""
+#: ../../PyMOTW/array/index.rst:167
+msgid ":mod:`struct`"
+msgstr ":mod:`struct`"
 
-#: ../../source/array/index.rst:187
-msgid ""
-"The ``byteswap()`` method switches the byte order of the items in the "
-"array from within C, so it is much more efficient than looping over the "
-"data in Python."
-msgstr ""
+#: ../../PyMOTW/array/index.rst:167
+msgid "The struct module."
+msgstr "El módulo struct."
 
-#: ../../source/array/index.rst:212
-msgid ":pydoc:`array`"
-msgstr ""
-
-#: ../../source/array/index.rst:214
-msgid ":mod:`struct` -- The ``struct`` module."
-msgstr ""
+#: ../../PyMOTW/array/index.rst:170
+msgid "`Numerical Python <http://www.scipy.org>`_"
+msgstr "`Numerical Python <http://www.scipy.org>`_"
 
 #: ../../source/array/index.rst:216
 msgid ""
 "`Numerical Python <http://www.scipy.org>`_ -- NumPy is a Python library "
 "for working with large data sets efficiently."
 msgstr ""
+"NumPy es una librería de Python para el trabajo de grandes conjuntos de "
+"datos de manera eficiente"
 
-#: ../../source/array/index.rst:219
-msgid ":ref:`Python 2 to 3 porting notes for array <porting-array>`"
-msgstr ""
-
+#: ../../PyMOTW/array/index.rst:172
+msgid ":ref:`article-data-structures`"
+msgstr ":ref:`article-data-structures`"
