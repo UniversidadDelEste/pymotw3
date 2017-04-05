@@ -3,74 +3,98 @@
 # This file is distributed under the same license as the PyMOTW-3 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyMOTW-3 \n"
+"Project-Id-Version: PyMOTW-3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-04 23:14-0300\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: Carlos Sisek <carlos.sisek@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: ../../source/locale/index.rst:3
 msgid "locale --- Cultural Localization API"
-msgstr ""
+msgstr "locale -- API de localización cultural"
 
 #: ../../source/locale/index.rst:8
 msgid "Format and parse values that depend on location or language."
 msgstr ""
+"El formato y análisis de valores dependen de la ubicación o el idioma."
 
 #: ../../source/locale/index.rst:10
 msgid ""
 "The ``locale`` module is part of Python's internationalization and "
 "localization support library. It provides a standard way to handle "
 "operations that may depend on the language or location of a user. For "
-"example, it handles formatting numbers as currency, comparing strings for"
-" sorting, and working with dates. It does not cover translation (see the "
-":mod:`gettext` module) or Unicode encoding (see the :mod:`codecs` "
-"module)."
+"example, it handles formatting numbers as currency, comparing strings for "
+"sorting, and working with dates. It does not cover translation (see the :"
+"mod:`gettext` module) or Unicode encoding (see the :mod:`codecs` module)."
 msgstr ""
+"El módulo `` locale`` forma parte de la biblioteca de soporte de "
+"internacionalización y localización de Python. Proporciona una forma "
+"estándar de manejar operaciones que pueden depender del idioma o la "
+"ubicación de un usuario. Por ejemplo, maneja los números de formato como "
+"moneda, comparando cadenas para ordenar y trabajando con fechas. No cubre "
+"la traducción (ver el módulo: mod: `gettext`) ni la codificación Unicode "
+"(ver el módulo: mod:` codecs`)."
 
 #: ../../source/locale/index.rst:20
 msgid ""
 "Changing the locale can have application-wide ramifications, so the "
 "recommended practice is to avoid changing the value in a library and to "
-"let the application set it one time. In the examples in this section, the"
-" locale is changed several times within a short program to highlight the "
-"differences in the settings of various locales. It is far more likely "
-"that an application will set the locale once as it starts up or when a "
-"web request is received and not change it."
+"let the application set it one time. In the examples in this section, the "
+"locale is changed several times within a short program to highlight the "
+"differences in the settings of various locales. It is far more likely that "
+"an application will set the locale once as it starts up or when a web "
+"request is received and not change it."
 msgstr ""
+"Cambiando la configuración regional puede tener ramificaciones de toda la "
+"aplicación, por lo que la práctica recomendada es evitar cambiar el valor "
+"en una biblioteca y dejar que la aplicación lo establezca una vez. En los "
+"ejemplos de esta sección, la configuración regional se cambia varias veces "
+"dentro de un programa corto para resaltar las diferencias en la "
+"configuración de varios entornos locales. Es mucho más probable que una "
+"aplicación establezca la configuración regional una vez que se inicie o "
+"cuando se reciba una solicitud web y no la cambie."
 
 #: ../../source/locale/index.rst:28
 msgid ""
 "This section covers some of the high-level functions in the ``locale`` "
 "module. There are others which are lower level (``format_string()``) or "
-"which relate to managing the locale for an application "
-"(``resetlocale()``)."
+"which relate to managing the locale for an application (``resetlocale()``)."
 msgstr ""
+"Esta sección cubre algunas de las funciones de alto nivel del módulo `` "
+"locale``. Hay otros que son de nivel inferior (`` format_string () ``) o "
+"que se relacionan con la gestión de la configuración regional de una "
+"aplicación (`` resetlocale () ``)."
 
 #: ../../source/locale/index.rst:34
 msgid "Probing the Current Locale"
-msgstr ""
+msgstr "Probando el actual Locale"
 
 #: ../../source/locale/index.rst:36
 msgid ""
 "The most common way to let the user change the locale settings for an "
-"application is through an environment variable (``LC_ALL``, ``LC_CTYPE``,"
-" ``LANG``, or ``LANGUAGE``, depending on the platform). The application "
-"then calls ``setlocale()`` without a hard-coded value, and the "
-"environment value is used."
+"application is through an environment variable (``LC_ALL``, ``LC_CTYPE``, "
+"``LANG``, or ``LANGUAGE``, depending on the platform). The application "
+"then calls ``setlocale()`` without a hard-coded value, and the environment "
+"value is used."
 msgstr ""
+"La forma más común de permitir que el usuario cambie la configuración "
+"regional de una aplicación es a través de una variable de entorno (`` "
+"LC_ALL``, `` LC_CTYPE``, `` LANG`` o `` LANGUAGE``, dependiendo de la "
+"plataforma ). La aplicación entonces llama `` setlocale () `` sin un valor "
+"codificado, y se utiliza el valor del entorno."
 
 #: ../../source/locale/index.rst
 msgid "locale_env.py"
-msgstr ""
+msgstr "locale_env.py"
 
 #: ../../source/locale/index.rst:46
 msgid ""
@@ -78,146 +102,179 @@ msgid ""
 "conventions.  The full list of value names and definitions is covered in "
 "the standard library documentation."
 msgstr ""
+"El método ``localeconv () `` devuelve un diccionario que contiene las "
+"convenciones de la configuración regional. La lista completa de nombres de "
+"valores y definiciones se incluye en la documentación estándar de la "
+"biblioteca."
 
 #: ../../source/locale/index.rst:50
 msgid ""
 "A Mac running OS X 10.11.6 with all of the variables unset produces this "
 "output:"
 msgstr ""
+"Un equipo Mac que ejecuta OS X 10.11.6 con todas las variables "
+"desactivadas produce este resultado:"
 
 #: ../../source/locale/index.rst:96
 msgid ""
 "Running the same script with the ``LANG`` variable set shows how the "
 "locale and default encoding change."
 msgstr ""
+"La ejecución de la misma secuencia de comandos con el conjunto de "
+"variables `` LANG`` muestra cómo cambia la configuración regional y la "
+"codificación predeterminada."
 
 #: ../../source/locale/index.rst:99
 msgid "The United States (``en_US``):"
-msgstr ""
+msgstr "EE.UU. (``en_US``):"
 
 #: ../../source/locale/index.rst:144
 msgid "France (``fr_FR``):"
-msgstr ""
+msgstr "Francia (``fr_FR``):"
 
 #: ../../source/locale/index.rst:190
 msgid "Spain (``es_ES``):"
-msgstr ""
+msgstr "España (``es_ES``):"
 
 #: ../../source/locale/index.rst:236
 msgid "Portugal (``pt_PT``):"
-msgstr ""
+msgstr "Portugal (``pt_PT``):"
 
 #: ../../source/locale/index.rst:283
 msgid "Poland (``pl_PL``):"
-msgstr ""
+msgstr "Polonia (``pl_PL``):"
 
 #: ../../source/locale/index.rst:331
 msgid "Currency"
-msgstr ""
+msgstr "Moneda"
 
 #: ../../source/locale/index.rst:333
 msgid ""
 "The earlier example output shows that changing the locale updates the "
 "currency symbol setting and the character to separate whole numbers from "
 "decimal fractions.  This example loops through several different locales "
-"to print a positive and negative currency value formatted for each "
-"locale."
+"to print a positive and negative currency value formatted for each locale."
 msgstr ""
+"La salida de ejemplo anterior muestra que al cambiar la configuración "
+"regional se actualiza la configuración de símbolo de moneda y el carácter "
+"para separar números enteros de fracciones decimales. Este ejemplo realiza "
+"un bucle a través de varias configuraciones diferentes para imprimir un "
+"valor de moneda positivo y negativo con formato para cada configuración "
+"regional."
 
 #: ../../source/locale/index.rst
 msgid "locale_currency.py"
-msgstr ""
+msgstr "locale_currency.py"
 
 #: ../../source/locale/index.rst:343
 msgid "The output is this small table:"
-msgstr ""
+msgstr "La salida es esta pequeña tabla:"
 
 #: ../../source/locale/index.rst:362
 msgid "Formatting Numbers"
-msgstr ""
+msgstr "Formateo de números"
 
 #: ../../source/locale/index.rst:364
 msgid ""
 "Numbers not related to currency are also formatted differently depending "
-"on the locale.  In particular, the ``grouping`` character used to "
-"separate large numbers into readable chunks changes."
+"on the locale.  In particular, the ``grouping`` character used to separate "
+"large numbers into readable chunks changes."
 msgstr ""
+"Los números no relacionados con la moneda también se formatean de forma "
+"diferente dependiendo de la configuración regional. En particular, el "
+"carácter `` grouping`` utilizado para separar grandes números en trozos "
+"legibles."
 
 #: ../../source/locale/index.rst
 msgid "locale_grouping.py"
-msgstr ""
+msgstr "locale_grouping.py"
 
 #: ../../source/locale/index.rst:372
 msgid ""
-"To format numbers without the currency symbol, use ``format()`` instead "
-"of ``currency()``."
+"To format numbers without the currency symbol, use ``format()`` instead of "
+"``currency()``."
 msgstr ""
+"Para dar formato a números sin el símbolo de moneda, utilice `` format () "
+"`` en lugar de `` currency () ``."
 
 #: ../../source/locale/index.rst:392
 msgid ""
 "To convert locale-formatted numbers to a normalized locale-agnostic "
 "format, use ``delocalize()``."
 msgstr ""
+"Para convertir números con formato regional a un formato agnóstico "
+"normalizado, utilice `` delocalize () ``."
 
 #: ../../source/locale/index.rst
 msgid "locale_delocalize.py"
-msgstr ""
+msgstr "locale_delocalize.p"
 
 #: ../../source/locale/index.rst:399
 msgid ""
-"Grouping punctuation is removed and the decimal separator is converted to"
-" always be a ``.``."
+"Grouping punctuation is removed and the decimal separator is converted to "
+"always be a ``.``."
 msgstr ""
+"Se elimina la puntuación de agrupación y se convierte el separador decimal "
+"para que siempre sea un `` .``."
 
 #: ../../source/locale/index.rst:421
 msgid "Parsing Numbers"
-msgstr ""
+msgstr "Analizando Números"
 
 #: ../../source/locale/index.rst:423
 msgid ""
 "Besides generating output in different formats, the ``locale`` module "
-"helps with parsing input. It includes ``atoi()`` and ``atof()`` functions"
-" for converting the strings to integer and floating point values based on"
-" the locale's numerical formatting conventions."
+"helps with parsing input. It includes ``atoi()`` and ``atof()`` functions "
+"for converting the strings to integer and floating point values based on "
+"the locale's numerical formatting conventions."
 msgstr ""
+"Además de generar resultados en diferentes formatos, el módulo `` locale`` "
+"ayuda con la entrada de análisis. Incluye las funciones `` atoi () `` y `` "
+"atof () `` para convertir las cadenas en enteros y valores en coma "
+"flotante basados en las convenciones de formato numérico de la "
+"configuración regional."
 
 #: ../../source/locale/index.rst
 msgid "locale_atof.py"
-msgstr ""
+msgstr "locale_atof.py"
 
 #: ../../source/locale/index.rst:433
 msgid ""
-"The grouping and decimal separator values of the locale are recognized by"
-" the parser."
+"The grouping and decimal separator values of the locale are recognized by "
+"the parser."
 msgstr ""
+"Los valores de agrupación y de separación decimal de la configuración "
+"regional son reconocidos por el analizador."
 
 #: ../../source/locale/index.rst:454
 msgid "Dates and Times"
-msgstr ""
+msgstr "Fechas y Horas"
 
 #: ../../source/locale/index.rst:456
 msgid "Another important aspect of localization is date and time formatting."
 msgstr ""
+"Otro aspecto importante de la localización es el formato de fecha y hora."
 
 #: ../../source/locale/index.rst
 msgid "locale_date.py"
-msgstr ""
+msgstr "locale_date.py"
 
 #: ../../source/locale/index.rst:462
 msgid ""
 "This example uses the date formatting string for the locale to print the "
 "current date and time."
 msgstr ""
+"En este ejemplo utiliza la cadena de formato de fecha para la "
+"configuración regional para imprimir la fecha y la hora actuales."
 
 #: ../../source/locale/index.rst:483
 msgid ":pydoc:`locale`"
-msgstr ""
+msgstr ":pydoc:`locale`"
 
 #: ../../source/locale/index.rst:485
 msgid ":ref:`Python 2 to 3 porting notes for locale <porting-locale>`"
-msgstr ""
+msgstr ": ref: `Python 2 a 3 porta notas para locale <porting-locale>`"
 
 #: ../../source/locale/index.rst:487
 msgid ":mod:`gettext` -- Message catalogs for translations."
-msgstr ""
-
+msgstr ": mod: `gettext` - Catálogos de mensajes para traducciones."
