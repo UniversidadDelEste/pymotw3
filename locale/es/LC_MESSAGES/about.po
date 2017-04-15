@@ -3,20 +3,19 @@
 # This file is distributed under the same license as the PyMOTW-3 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyMOTW-3 \n"
+"Project-Id-Version: PyMOTW-3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: 2015-10-07 02:09-0300\n"
+"PO-Revision-Date: 2017-04-15 15:35-0300\n"
 "Last-Translator: Mariano Reingart <reingart@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Language-Team: \n"
 
 #: ../../source/about.rst:3
 msgid "About Python Module of the Week"
@@ -48,9 +47,7 @@ msgstr ""
 
 #: ../../source/about.rst:12
 msgid "See the project home page at https://pymotw.com/3/ for updates."
-msgstr ""
-"La documentación completa para la biblioteca estándar puede encontrarse en "
-"el sitio web de Python en http://docs.python.org/library/."
+msgstr "Vea la página del proyecto en https://pymotw.com/3/ for updates."
 
 #: ../../PyMOTW/about.rst:19
 msgid "Tools"
@@ -58,13 +55,13 @@ msgstr "Herramientas"
 
 #: ../../PyMOTW/about.rst:21
 msgid ""
-"Source code is available via git from "
-"https://bitbucket.org/dhellmann/pymotw-3/ or "
-"https://pymotw.com/3/PyMOTW-3-1.0.tar.gz as a single downloadable "
-"archive."
+"Source code is available via git from https://bitbucket.org/dhellmann/"
+"pymotw-3/ or https://pymotw.com/3/PyMOTW-3-1.0.tar.gz as a single "
+"downloadable archive."
 msgstr ""
-"El texto fuente de PyMOTW es reStructuredText_ y la salida HTML y PDF son "
-"creadas usando Sphinx_."
+"El código fuente está disponible via git desde https://bitbucket.org/"
+"dhellmann/pymotw-3/ o https://pymotw.com/3/PyMOTW-3-1.0.tar.gz como un único "
+"archivo descargable."
 
 #: ../../source/about.rst:19
 msgid ""
@@ -215,7 +212,7 @@ msgstr ""
 
 #: ../../source/about.rst:75
 msgid "`Chinese <http://www.pandacademy.com/pymotw-3-介绍/>`__"
-msgstr ""
+msgstr "`Chino <http://www.pandacademy.com/pymotw-3-介绍/>`__"
 
 #: ../../PyMOTW/about.rst:137
 msgid ""
@@ -227,6 +224,14 @@ msgid ""
 "http://denklab.org/articles/category/pymotw/, and there is an `RSS feed "
 "<http://denklab.org/feeds/articles/category/pymotw/>`_."
 msgstr ""
+"`Ernesto Rico Schmidt <http://denklab.org/>`_ provee una traducción al "
+"Español que sigue la publicación de articulos en Ingles. Ernesto está en "
+"Bolivia, y está traduciendo los eejemplos como una forma de contribuir a los "
+"miembros de la comunidad `Boliviana de Software Libre <http://www."
+"softwarelibre.org.bo/>`_ que usa Python.  La lista completa de los artículos "
+"traducidos puede encontrarse en http://denklab.org/articles/category/"
+"pymotw/, y existe un `Feed RSS <http://denklab.org/feeds/articles/category/"
+"pymotw/>`_."
 
 #: ../../PyMOTW/about.rst:146
 msgid "`Japanese <http://ja.pymotw.com/>`_"
@@ -267,6 +272,12 @@ msgid ""
 "to have PyMOTW included with works from authors like Mark Pilgrim, Fredrik "
 "Lundh, Andrew Kuchling, and a growing list of others."
 msgstr ""
+"Gerard Flanagan está trabajando en un \"Python compendium\" llamado `The "
+"Hazel Tree <http://www.thehazeltree.org/>`_.  Esta convirtiendo una "
+"colección de viejos y nuevos materiales de referencia relacionados a Python "
+"en reStructuredText y construyendo un repositorio único e indexable.  Estoy "
+"muy contento de que PyMOTW haya sido incluido entre trabajos de autores como "
+"Mark Pilgrim, Fredrik Lundh, Andrew Kuchling, y una creciente lista."
 
 #: ../../PyMOTW/about.rst:172
 msgid "Other Contributors"
@@ -325,6 +336,13 @@ msgid ""
 "or publicity pertaining to distribution of the software without specific, "
 "written prior permission."
 msgstr ""
+"Permission to use, copy, modify, and distribute this software and its "
+"documentation for any purpose and without fee is hereby granted, provided "
+"that the above copyright notice appear in all copies and that both that "
+"copyright notice and this permission notice appear in supporting "
+"documentation, and that the name of Doug Hellmann not be used in advertising "
+"or publicity pertaining to distribution of the software without specific, "
+"written prior permission."
 
 #: ../../PyMOTW/copyright.rst:21
 msgid ""
@@ -336,3 +354,10 @@ msgid ""
 "ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS "
 "SOFTWARE."
 msgstr ""
+"DOUG HELLMANN DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, "
+"INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT "
+"SHALL DOUG HELLMANN BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL "
+"DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR "
+"PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS "
+"ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS "
+"SOFTWARE."
