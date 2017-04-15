@@ -45,7 +45,7 @@ options(
         docroot='.',
         builddir='build',
         sourcedir='source',
-        warnerror=True,
+        warnerror=False,
     ),
 
     # Some of the files include [[[ as part of a nested list data
@@ -94,7 +94,7 @@ options(
 
     testsite=Bunch(
         # Where do we put the files for local testing?
-        local_path='/Users/dhellmann/Sites/pymotw.com/3',
+        local_path='/home/web2py/books/pymotw3/website/',
     ),
 
     sitemap_gen=Bunch(

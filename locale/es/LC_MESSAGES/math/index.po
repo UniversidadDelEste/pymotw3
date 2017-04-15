@@ -8,30 +8,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyMOTW-3 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-06 13:35-0300\n"
+"POT-Creation-Date: 2017-04-15 15:56-0300\n"
 "PO-Revision-Date: 2015-10-10 11:27-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
-"Language: es\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: ../../PyMOTW/math/index.rst:3
-msgid "math -- Mathematical functions"
+#: ../../source/math/index.rst:3
+#, fuzzy
+msgid "math --- Mathematical Functions"
 msgstr "math -- Funciones matemáticas"
 
-# Provide> Provee o proporciona?
-#: ../../PyMOTW/math/index.rst:8
+#: ../../source/math/index.rst:8
 msgid "Provides functions for specialized mathematical operations."
 msgstr "Provee funciones para operaciones matemáticas especializadas"
 
-#: ../../PyMOTW/math/index.rst:9
-msgid "1.4"
-msgstr "1.4"
-
-#: ../../PyMOTW/math/index.rst:11
+#: ../../source/math/index.rst:10
 msgid ""
 "The ``math`` module implements many of the IEEE functions that would "
 "normally be found in the native platform C libraries for complex "
@@ -40,8 +35,8 @@ msgid ""
 msgstr ""
 "El : mod :`math` módulo implementa muchas de las funciones IEEE que "
 "normalmente se pueden encontrar en las plataformas nativas de las "
-"bibliotecas C para operaciones matemáticas complejas usando valores punto "
-"flotante, incluyendo logaritmos y operaciones trigonométricas."
+"bibliotecas C para operaciones matemáticas complejas usando valores punto"
+" flotante, incluyendo logaritmos y operaciones trigonométricas."
 
 #: ../../source/math/index.rst:16
 msgid "Special Constants"
@@ -59,8 +54,8 @@ msgstr ""
 
 #: ../../source/math/index.rst:25
 msgid ""
-"Both values are limited in precision only by the platform's floating point C "
-"library."
+"Both π and e are limited in precision only by the platform's floating "
+"point C library."
 msgstr ""
 
 #: ../../source/math/index.rst:44
@@ -88,10 +83,13 @@ msgstr ""
 
 #: ../../source/math/index.rst:83
 msgid ""
-"Not all floating point overflows result in ``INF`` values, however. "
-"Calculating an exponent with floating point values, in particular, raises :"
-"ref:`OverflowError <exceptions-OverflowError>` instead of preserving the "
-"``INF`` result."
+"Not all floating point overflows result in ``inf`` values, however. "
+"Calculating an exponent with floating point values, in particular, raises"
+" ``OverflowError`` instead of preserving the ``inf`` result."
+msgstr ""
+
+#: ../../source/math/index.rst
+msgid "math_overflow.py"
 msgstr ""
 
 #: ../../source/math/index.rst:92
@@ -138,8 +136,11 @@ msgstr ""
 
 #: ../../source/math/index.rst:165
 msgid ""
-"``NaN`` does not compare as equal to any value, even itself, so to check for "
-"``NaN`` you must use :func:`isnan`."
+"Comparisons for floating point values can be error prone, with each step "
+"of the computation potentially introducing errors due to the numerical "
+"representation. The ``isclose()`` function uses a stable algorithm to "
+"minimize these errors and provide a way for relative as well as absolute "
+"comparisons. The formula used is equivalent to"
 msgstr ""
 
 #: ../../source/math/index.rst:175
@@ -165,9 +166,12 @@ msgstr ""
 
 #: ../../source/math/index.rst:207
 msgid ""
-"The :mod:`math` module includes three functions for converting floating "
-"point values to whole numbers.  Each takes a different approach, and will be "
-"useful in different circumstances."
+"To use a fixed or \"absolute\" tolerance, pass ``abs_tol`` instead of "
+"``rel_tol``."
+msgstr ""
+
+#: ../../source/math/index.rst
+msgid "math_isclose_abs_tol.py"
 msgstr ""
 
 #: ../../source/math/index.rst:214
@@ -282,8 +286,8 @@ msgstr ""
 
 #: ../../source/math/index.rst:392
 msgid ""
-"In practical terms, the absolute value of a :class:`float` is represented as "
-"a positive value."
+"In practical terms, the absolute value of a ``float`` is represented as a"
+" positive value."
 msgstr ""
 
 #: ../../source/math/index.rst:410
@@ -299,8 +303,8 @@ msgstr ""
 
 #: ../../source/math/index.rst:418
 msgid ""
-"An extra function like :func:`copysign` is needed because comparing NaN and -"
-"NaN directly with other values does not work."
+"An extra function like ``copysign()`` is needed because comparing nan and"
+" -nan directly with other values does not work."
 msgstr ""
 
 #: ../../source/math/index.rst:442
@@ -309,12 +313,12 @@ msgstr ""
 
 #: ../../source/math/index.rst:444
 msgid ""
-"Representing precise values in binary floating point memory is challenging.  "
-"Some values cannot be represented exactly, and the more often a value is "
-"manipulated through repeated calculations, the more likely a representation "
-"error will be introduced.  :mod:`math` includes a function for computing the "
-"sum of a series of floating point numbers using an efficient algorithm that "
-"minimize such errors."
+"Representing precise values in binary floating point memory is "
+"challenging.  Some values cannot be represented exactly, and the more "
+"often a value is manipulated through repeated calculations, the more "
+"likely a representation error will be introduced.  ``math`` includes a "
+"function for computing the sum of a series of floating point numbers "
+"using an efficient algorithm that minimizes such errors."
 msgstr ""
 
 #: ../../source/math/index.rst
@@ -323,10 +327,10 @@ msgstr ""
 
 #: ../../source/math/index.rst:455
 msgid ""
-"Given a sequence of ten values each equal to ``0.1``, the expected value for "
-"the sum of the sequence is ``1.0``.  Since ``0.1`` cannot be represented "
-"exactly as a floating point value, however, errors are introduced into the "
-"sum unless it is calculated with :func:`fsum`."
+"Given a sequence of ten values, each equal to ``0.1``, the expected value"
+" for the sum of the sequence is ``1.0``.  Since ``0.1`` cannot be "
+"represented exactly as a floating point value, however, errors are "
+"introduced into the sum unless it is calculated with ``fsum()``."
 msgstr ""
 
 #: ../../source/math/index.rst:475
@@ -343,9 +347,9 @@ msgstr ""
 
 #: ../../source/math/index.rst:484
 msgid ""
-":func:`factorial` only works with whole numbers, but does accept :class:"
-"`float` arguments as long as they can be converted to an integer without "
-"losing value."
+"``factorial()`` only works with whole numbers, but does accept ``float`` "
+"arguments as long as they can be converted to an integer without losing "
+"value."
 msgstr ""
 
 #: ../../source/math/index.rst:507
@@ -380,12 +384,16 @@ msgstr ""
 
 #: ../../source/math/index.rst:563
 msgid ""
-"The modulo operator (``%``) computes the remainder of a division expression "
-"(i.e., ``5 % 2 = 1``).  The operator built into the language works well with "
-"integers but, as with so many other floating point operations, intermediate "
-"calculations cause representational issues that result in a loss of data.  :"
-"func:`fmod` provides a more accurate implementation for floating point "
-"values."
+"The modulo operator (``%``) computes the remainder of a division "
+"expression (i.e., ``5 % 2 = 1``).  The operator built into the language "
+"works well with integers but, as with so many other floating point "
+"operations, intermediate calculations cause representational issues that "
+"result in a loss of data.  ``fmod()`` provides a more accurate "
+"implementation for floating point values."
+msgstr ""
+
+#: ../../source/math/index.rst
+msgid "math_fmod.py"
 msgstr ""
 
 #: ../../source/math/index.rst:574
@@ -415,17 +423,22 @@ msgstr ""
 
 #: ../../source/math/index.rst:622
 msgid ""
-"Exponential growth curves appear in economics, physics, and other sciences.  "
-"Python has a built-in exponentiation operator (\"``**``\"), but :func:`pow` "
-"can be useful when you need to pass a callable function as an argument."
+"Exponential growth curves appear in economics, physics, and other "
+"sciences.  Python has a built-in exponentiation operator (\"``**``\"), "
+"but ``pow()`` can be useful when a callable function is needed as an "
+"argument to another function."
+msgstr ""
+
+#: ../../source/math/index.rst
+msgid "math_pow.py"
 msgstr ""
 
 #: ../../source/math/index.rst:631
 msgid ""
-"Raising ``1`` to any power always returns ``1.0``, as does raising any value "
-"to a power of ``0.0``.  Most operations on the not-a-number value ``nan`` "
-"return ``nan``.  If the exponent is less than ``1``, :func:`pow` computes a "
-"root."
+"Raising ``1`` to any power always returns ``1.0``, as does raising any "
+"value to a power of ``0.0``.  Most operations on the not-a-number value "
+"``nan`` return ``nan``.  If the exponent is less than ``1``, ``pow()`` "
+"computes a root."
 msgstr ""
 
 #: ../../source/math/index.rst:654
@@ -447,8 +460,8 @@ msgstr ""
 
 #: ../../source/math/index.rst:680
 msgid ""
-"The logarithm function finds *y* where ``x = b ** y``.  By default, :func:"
-"`log` computes the natural logarithm (the base is *e*).  If a second "
+"The logarithm function finds ``y`` where ``x = b ** y``.  By default, "
+"``log()`` computes the natural logarithm (the base is *e*).  If a second "
 "argument is provided, that value is used as the base."
 msgstr ""
 
@@ -481,10 +494,12 @@ msgstr ""
 
 #: ../../source/math/index.rst:740
 msgid ""
-"There are two variations of :func:`log`.  Given floating point "
-"representation and rounding errors the computed value produced by ``log(x, "
-"b)`` has limited accuracy, especially for some bases. :func:`log10` computes "
-"``log(x, 10)``, using a more accurate algorithm than :func:`log`."
+"Similar to ``log10()``, ``log2()`` calculates the equivalent of "
+"``math.log(x, 2)``."
+msgstr ""
+
+#: ../../source/math/index.rst
+msgid "math_log2.py"
 msgstr ""
 
 #: ../../source/math/index.rst:747
@@ -523,8 +538,8 @@ msgstr ""
 #: ../../source/math/index.rst:807
 msgid ""
 "As with other special-case functions, it uses an algorithm that produces "
-"more accurate results than the general-purpose equivalent ``math.pow(math.e, "
-"x)``."
+"more accurate results than the general-purpose equivalent "
+"``math.pow(math.e, x)``."
 msgstr ""
 
 #: ../../source/math/index.rst:825
@@ -547,19 +562,23 @@ msgstr ""
 
 #: ../../source/math/index.rst:852
 msgid ""
-"Although degrees are more commonly used in everyday discussions of angles, "
-"radians are the standard unit of angular measure in science and math.  A "
-"radian is the angle created by two lines intersecting at the center of a "
-"circle, with their ends on the circumference of the circle spaced one radius "
-"apart."
+"Although degrees are more commonly used in everyday discussions of "
+"angles, radians are the standard unit of angular measure in science and "
+"math.  A radian is the angle created by two lines intersecting at the "
+"center of a circle, with their ends on the circumference of the circle "
+"spaced one radius apart."
 msgstr ""
 
 #: ../../source/math/index.rst:858
 msgid ""
 "The circumference is calculated as ``2πr``, so there is a relationship "
 "between radians and π, a value that shows up frequently in trigonometric "
-"calculations.  That relationship leads to radians being used in trigonometry "
-"and calculus, because they result in more compact formulas."
+"calculations.  That relationship leads to radians being used in "
+"trigonometry and calculus, because they result in more compact formulas."
+msgstr ""
+
+#: ../../source/math/index.rst:864
+msgid "To convert from degrees to radians, use ``radians()``."
 msgstr ""
 
 #: ../../source/math/index.rst
@@ -588,9 +607,11 @@ msgstr ""
 
 #: ../../source/math/index.rst:926
 msgid ""
-"Trigonometric functions relate angles in a triangle to the lengths of its "
-"sides.  They show up in formulas with periodic properties such as harmonics, "
-"circular motion, or when dealing with angles."
+"Trigonometric functions relate angles in a triangle to the lengths of its"
+" sides.  They show up in formulas with periodic properties such as "
+"harmonics, circular motion, or when dealing with angles.  All of the "
+"trigonometric functions in the standard library take angles expressed as "
+"radians."
 msgstr ""
 
 #: ../../source/math/index.rst:932
@@ -603,21 +624,15 @@ msgid ""
 "(``tan A = opposite/adjacent``)."
 msgstr ""
 
-#: ../../PyMOTW/math/index.rst:752
-msgid ""
-"Given an angle in a right triangle, the *sine* is the ratio of the length of "
-"the side opposite the angle to the hypotenuse (``sin A = opposite/"
-"hypotenuse``).  The *cosine* is the ratio of the length of the adjacent side "
-"to the hypotenuse (``cos A = adjacent/hypotenuse``). And the *tangent* is "
-"the ratio of the opposite side to the adjacent side (``tan A = opposite/"
-"adjacent``)."
+#: ../../source/math/index.rst
+msgid "math_trig.py"
 msgstr ""
 
 #: ../../source/math/index.rst:943
 msgid ""
-"The tangent can also be defined as the ratio of the sine of the angle to its "
-"cosine, and since the cosine is 0 for π/2 and 3π/2 radians, the tangent is "
-"infinite."
+"The tangent can also be defined as the ratio of the sine of the angle to "
+"its cosine, and since the cosine is 0 for π/2 and 3π/2 radians, the "
+"tangent is infinite."
 msgstr ""
 
 #: ../../source/math/index.rst:973
@@ -686,7 +701,7 @@ msgstr ""
 
 #: ../../source/math/index.rst:1095
 msgid ""
-"Inverse hyperbolic functions :func:`acosh`, :func:`asinh`, and :func:`atanh` "
+"Inverse hyperbolic functions ``acosh()``, ``asinh()``, and ``atanh()`` "
 "are also available."
 msgstr ""
 
@@ -716,8 +731,12 @@ msgstr ""
 
 #: ../../source/math/index.rst:1139
 msgid ""
-"`IEEE floating point arithmetic in Python <http://www.johndcook.com/"
-"blog/2009/07/21/ieee-arithmetic-python/>`__"
+"The implementation of ``erfc()`` avoids precision errors for small values"
+" of ``x`` when subtracting from 1."
+msgstr ""
+
+#: ../../source/math/index.rst:1169
+msgid ":pydoc:`math`"
 msgstr ""
 
 #: ../../source/math/index.rst:1171
@@ -734,8 +753,167 @@ msgid ""
 "mathematical calculations in Python."
 msgstr ""
 
-#: ../../PyMOTW/math/index.rst:994
-msgid ""
-"Open source libraryes for scientific and mathematical calculations in Python."
+#: ../../source/math/index.rst:1179
+msgid ":pep:`485` -- \"A function for testing approximate equality\""
 msgstr ""
+
+#~ msgid "1.4"
+#~ msgstr "1.4"
+
+#~ msgid ""
+#~ "Both values are limited in precision "
+#~ "only by the platform's floating point"
+#~ " C library."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not all floating point overflows result"
+#~ " in ``INF`` values, however. Calculating"
+#~ " an exponent with floating point "
+#~ "values, in particular, raises "
+#~ ":ref:`OverflowError <exceptions-OverflowError>` "
+#~ "instead of preserving the ``INF`` "
+#~ "result."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``NaN`` does not compare as equal "
+#~ "to any value, even itself, so to"
+#~ " check for ``NaN`` you must use "
+#~ ":func:`isnan`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The :mod:`math` module includes three "
+#~ "functions for converting floating point "
+#~ "values to whole numbers.  Each takes "
+#~ "a different approach, and will be "
+#~ "useful in different circumstances."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In practical terms, the absolute value"
+#~ " of a :class:`float` is represented "
+#~ "as a positive value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An extra function like :func:`copysign` "
+#~ "is needed because comparing NaN and "
+#~ "-NaN directly with other values does "
+#~ "not work."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Representing precise values in binary "
+#~ "floating point memory is challenging.  "
+#~ "Some values cannot be represented "
+#~ "exactly, and the more often a "
+#~ "value is manipulated through repeated "
+#~ "calculations, the more likely a "
+#~ "representation error will be introduced.  "
+#~ ":mod:`math` includes a function for "
+#~ "computing the sum of a series of"
+#~ " floating point numbers using an "
+#~ "efficient algorithm that minimize such "
+#~ "errors."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Given a sequence of ten values "
+#~ "each equal to ``0.1``, the expected "
+#~ "value for the sum of the sequence"
+#~ " is ``1.0``.  Since ``0.1`` cannot be"
+#~ " represented exactly as a floating "
+#~ "point value, however, errors are "
+#~ "introduced into the sum unless it "
+#~ "is calculated with :func:`fsum`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":func:`factorial` only works with whole "
+#~ "numbers, but does accept :class:`float` "
+#~ "arguments as long as they can be"
+#~ " converted to an integer without "
+#~ "losing value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The modulo operator (``%``) computes the"
+#~ " remainder of a division expression "
+#~ "(i.e., ``5 % 2 = 1``).  The "
+#~ "operator built into the language works"
+#~ " well with integers but, as with "
+#~ "so many other floating point operations,"
+#~ " intermediate calculations cause representational"
+#~ " issues that result in a loss "
+#~ "of data.  :func:`fmod` provides a more"
+#~ " accurate implementation for floating point"
+#~ " values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Exponential growth curves appear in "
+#~ "economics, physics, and other sciences.  "
+#~ "Python has a built-in exponentiation "
+#~ "operator (\"``**``\"), but :func:`pow` can "
+#~ "be useful when you need to pass"
+#~ " a callable function as an argument."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Raising ``1`` to any power always "
+#~ "returns ``1.0``, as does raising any "
+#~ "value to a power of ``0.0``.  Most"
+#~ " operations on the not-a-number value "
+#~ "``nan`` return ``nan``.  If the exponent"
+#~ " is less than ``1``, :func:`pow` "
+#~ "computes a root."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The logarithm function finds *y* where"
+#~ " ``x = b ** y``.  By default,"
+#~ " :func:`log` computes the natural logarithm"
+#~ " (the base is *e*).  If a "
+#~ "second argument is provided, that value"
+#~ " is used as the base."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There are two variations of :func:`log`."
+#~ "  Given floating point representation and"
+#~ " rounding errors the computed value "
+#~ "produced by ``log(x, b)`` has limited"
+#~ " accuracy, especially for some bases. "
+#~ ":func:`log10` computes ``log(x, 10)``, using"
+#~ " a more accurate algorithm than "
+#~ ":func:`log`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Trigonometric functions relate angles in "
+#~ "a triangle to the lengths of its"
+#~ " sides.  They show up in formulas "
+#~ "with periodic properties such as "
+#~ "harmonics, circular motion, or when "
+#~ "dealing with angles."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Inverse hyperbolic functions :func:`acosh`, "
+#~ ":func:`asinh`, and :func:`atanh` are also "
+#~ "available."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`IEEE floating point arithmetic in "
+#~ "Python <http://www.johndcook.com/blog/2009/07/21/ieee-"
+#~ "arithmetic-python/>`__"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open source libraryes for scientific and"
+#~ " mathematical calculations in Python."
+#~ msgstr ""
 

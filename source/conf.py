@@ -74,7 +74,7 @@ source_suffix = '.rst'
 locale_dirs = ['../locale/']    # path outside PyMOTW source directory
 gettext_compact = False         # optional.
 gettext_uuid = False            # add uid line and calculate similarity
-language = "en"                 # target translation
+language = "es"                 # target translation
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
