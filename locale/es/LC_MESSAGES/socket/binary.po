@@ -3,64 +3,78 @@
 # This file is distributed under the same license as the PyMOTW-3 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyMOTW-3 \n"
+"Project-Id-Version: PyMOTW-3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-05-07 14:16-0500\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: Francisco Silva G. <francisco.silva.garces@gmail.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #: ../../source/socket/binary.rst:3
 msgid "Sending Binary Data"
-msgstr ""
+msgstr "Enviando Datos Binarios"
 
 #: ../../source/socket/binary.rst:5
 msgid ""
-"Sockets transmit streams of bytes.  Those bytes can contain text messages"
-" encoded to bytes, as in the previous examples, or they can be made up of"
-" binary data that has been packed into a buffer with :mod:`struct` to "
-"prepare it for transmission."
+"Sockets transmit streams of bytes.  Those bytes can contain text "
+"messages encoded to bytes, as in the previous examples, or they can be "
+"made up of binary data that has been packed into a buffer with :mod:"
+"`struct` to prepare it for transmission."
 msgstr ""
+"Los zócalos transmiten flujos de bytes. Esos bytes pueden contener "
+"mensajes de texto codificados en bytes, como en los ejemplos anteriores, "
+"o pueden ser compuestos de datos binarios que han sido empaquetados en "
+"un buffer con :mod:`struct` para prepararlo para su transmisión."
 
 #: ../../source/socket/binary.rst:10
 msgid ""
-"This client program encodes an integer, a string of two characters, and a"
-" floating point value into a sequence of bytes that can be passed to the "
-"socket for transmission."
+"This client program encodes an integer, a string of two characters, and "
+"a floating point value into a sequence of bytes that can be passed to "
+"the socket for transmission."
 msgstr ""
+"Este programa cliente codifica un entero, una cadena de dos caracteres y "
+"un valor de punto flotante en una secuencia de bytes que se pueden pasar "
+"al socket para su transmisión."
 
 #: ../../source/socket/binary.rst
 msgid "socket_binary_client.py"
-msgstr ""
+msgstr "socket_binary_client.py"
 
 #: ../../source/socket/binary.rst:18
 msgid ""
 "When sending multi-byte binary data between two systems, it is important "
-"to ensure that both sides of the connection know what order the bytes are"
-" in and how to assemble them back into the correct order for the local "
-"architecture.  The server program uses the same ``Struct`` specifier to "
-"unpack the bytes it receives so they are interpreted in the correct "
-"order."
+"to ensure that both sides of the connection know what order the bytes "
+"are in and how to assemble them back into the correct order for the "
+"local architecture.  The server program uses the same ``Struct`` "
+"specifier to unpack the bytes it receives so they are interpreted in the "
+"correct order."
 msgstr ""
+"Cuando se envían datos binarios de varios bytes entre dos sistemas, es "
+"importante asegurarse de que ambos lados de la conexión saben en qué "
+"orden están los bytes y cómo montarlos de nuevo en el orden correcto "
+"para la arquitectura local. El programa de servidor utiliza el mismo "
+"especificador ``Struct`` para descomprimir los bytes que recibe para que "
+"se interpreten en el orden correcto."
 
 #: ../../source/socket/binary.rst
 msgid "socket_binary_server.py"
-msgstr ""
+msgstr "socket_binary_server.py"
 
 #: ../../source/socket/binary.rst:29
 msgid "Running the client produces:"
-msgstr ""
+msgstr "Ejecutar el cliente produce:"
 
 #: ../../source/socket/binary.rst:40
 msgid "And the server shows the values it receives:"
-msgstr ""
+msgstr "Y el servidor muestra los valores que recibe:"
 
 #: ../../source/socket/binary.rst:54
 msgid ""
@@ -71,8 +85,14 @@ msgid ""
 "``struct``.  The integer ``1`` uses one byte when represented as a "
 "string, but four when packed into the structure."
 msgstr ""
+"El valor de punto flotante pierde cierta precisión a medida que se "
+"empaqueta y desempaqueta, pero de otra manera los datos son transmitidos "
+"como se esperaba. Una cosa a tener en cuenta es que dependiendo del "
+"valor del entero, puede ser más eficiente convertirlo en texto y luego "
+"transmitirlo, en lugar de usar ``struct``. El número entero ``1`` usa un "
+"byte cuando se representa como una cadena, pero cuatro cuando está "
+"empacado en la estructura."
 
 #: ../../source/socket/binary.rst:63
 msgid ":mod:`struct` -- Converting between strings and other data types."
-msgstr ""
-
+msgstr ":mod:`struct` -- Conversión entre cadenas y otros tipos de datos."
