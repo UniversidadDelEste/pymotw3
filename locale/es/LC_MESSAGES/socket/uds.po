@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the PyMOTW-3 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyMOTW-3 \n"
+"Project-Id-Version: PyMOTW-3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-05-07 15:52-0500\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: Francisco Silva G. <francisco.silva.garces@gmail.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #: ../../source/socket/uds.rst:3
 msgid "Unix Domain Sockets"
-msgstr ""
+msgstr "Unix Domain Sockets"
 
 #: ../../source/socket/uds.rst:5
 msgid ""
@@ -29,9 +30,18 @@ msgid ""
 "containing the server name and port.  Second, the node created in the "
 "file system to represent the socket persists after the socket is closed, "
 "and needs to be removed each time the server starts up.  The echo server "
-"example from earlier can be updated to use UDS by making a few changes in"
-" the setup section."
+"example from earlier can be updated to use UDS by making a few changes "
+"in the setup section."
 msgstr ""
+"Desde la perspectiva del programador hay dos diferencias esenciales "
+"entre el uso de un socket de dominio Unix y un socket TCP/IP. En primer "
+"lugar, la dirección del socket es una ruta de acceso en el sistema de "
+"archivos, en lugar de una tupla que contiene el nombre del servidor y el "
+"puerto. En segundo lugar, el nodo creado en el sistema de archivos para "
+"representar el socket persiste después de cerrar el socket y debe "
+"quitarse cada vez que se inicia el servidor. El ejemplo anterior de "
+"servidor de echo puede actualizarse para usar UDS realizando algunos "
+"cambios en la sección de configuración."
 
 #: ../../source/socket/uds.rst:14
 msgid ""
@@ -39,10 +49,13 @@ msgid ""
 "Binding the socket and managing the incoming connections works the same "
 "as with TCP/IP sockets."
 msgstr ""
+"El ``socket`` necesita ser creado con la familia de direcciones "
+"``AF_UNIX``. Vincular el socket y administrar las conexiones entrantes "
+"funciona igual que con los sockets TCP/IP."
 
 #: ../../source/socket/uds.rst
 msgid "socket_echo_server_uds.py"
-msgstr ""
+msgstr "socket_echo_server_uds.py"
 
 #: ../../source/socket/uds.rst:22
 msgid ""
@@ -51,10 +64,15 @@ msgid ""
 "creates it by binding to the address.  Sending and receiving data works "
 "the same way in the UDS client as the TCP/IP client from before."
 msgstr ""
+"También es necesario modificar la configuración del cliente para que "
+"funcione con UDS. Debe suponer que el nodo del sistema de archivos para "
+"el socket existe, ya que el servidor lo crea vinculando a la dirección. "
+"El envío y la recepción de datos funcionan de la misma manera en el "
+"cliente UDS que el cliente TCP/IP de antes."
 
 #: ../../source/socket/uds.rst
 msgid "socket_echo_client_uds.py"
-msgstr ""
+msgstr "socket_echo_client_uds.py"
 
 #: ../../source/socket/uds.rst:32
 msgid ""
@@ -62,16 +80,21 @@ msgid ""
 "address information.  The server shows the messages received and sent "
 "back to the client."
 msgstr ""
+"La salida del programa es mayormente la misma, con actualizaciones "
+"apropiadas para la información de la dirección. El servidor muestra los "
+"mensajes recibidos y devueltos al cliente."
 
 #: ../../source/socket/uds.rst:54
 msgid ""
 "The client sends the message all at once, and receives parts of it back "
 "incrementally."
 msgstr ""
+"El cliente envía el mensaje de una vez y recibe partes de él de forma "
+"incremental."
 
 #: ../../source/socket/uds.rst:70
 msgid "Permissions"
-msgstr ""
+msgstr "Permisos"
 
 #: ../../source/socket/uds.rst:72
 msgid ""
@@ -79,16 +102,21 @@ msgid ""
 "standard file system permissions can be used to control access to the "
 "server."
 msgstr ""
+"Dado que el socket UDS está representado por un nodo en el sistema de "
+"archivos, se pueden utilizar permisos del sistema de archivos estándar "
+"para controlar el acceso al servidor."
 
 #: ../../source/socket/uds.rst:90
 msgid ""
 "Running the client as a user other than ``root`` now results in an error "
 "because the process does not have permission to open the socket."
 msgstr ""
+"Ejecutar el cliente como un usuario distinto de ``root`` ahora produce "
+"un error porque el proceso no tiene permiso para abrir el socket."
 
 #: ../../source/socket/uds.rst:103
 msgid "Communication Between Parent and Child Processes"
-msgstr ""
+msgstr "Comunicaciones Entre Procesos Padres e Hijos."
 
 #: ../../source/socket/uds.rst:105
 msgid ""
@@ -97,15 +125,21 @@ msgid ""
 "sockets that can be used to communicate between a parent process and a "
 "child process after the child is forked."
 msgstr ""
+"La función ``socketpair()`` es útil en la configuración de sockets UDS "
+"para la comunicación entre procesos bajo Unix. Crea un par de sockets "
+"conectados que se pueden utilizar para comunicarse entre un proceso "
+"padre y un proceso hijo después de que el hijo es bifurcado."
 
 #: ../../source/socket/uds.rst
 msgid "socket_socketpair.py"
-msgstr ""
+msgstr "socket_socketpair.py"
 
 #: ../../source/socket/uds.rst:114
 msgid ""
-"By default, a UDS socket is created, but the caller can also pass address"
-" family, socket type, and even protocol options to control how the "
-"sockets are created."
+"By default, a UDS socket is created, but the caller can also pass "
+"address family, socket type, and even protocol options to control how "
+"the sockets are created."
 msgstr ""
-
+"De forma predeterminada, se crea un socket UDS, pero el llamante también "
+"puede pasar la familia de direcciones, el tipo de socket, y las opciones "
+"de protocolo incluso para controlar cómo se crean los sockets."
