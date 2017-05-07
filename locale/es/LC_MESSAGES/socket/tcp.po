@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the PyMOTW-3 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyMOTW-3 \n"
+"Project-Id-Version: PyMOTW-3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-05-07 15:35-0500\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: Francisco Silva G. <francisco.silva.garces@gmail.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #: ../../source/socket/tcp.rst:3
 msgid "TCP/IP Client and Server"
-msgstr ""
+msgstr "Cliente y Servidor TCP/IP"
 
 #: ../../source/socket/tcp.rst:5
 msgid ""
@@ -27,10 +28,14 @@ msgid ""
 "messages, or connect to other applications as a *client*.  After both "
 "ends of a TCP/IP socket are connected, communication is bi-directional."
 msgstr ""
+"Los sockets pueden configurarse para actuar como un *servidor* y "
+"escuchar los mensajes entrantes, o conectarse a otras aplicaciones como "
+"un *cliente*. Después de conectar ambos extremos de un socket TCP/IP, la "
+"comunicación es bidireccional."
 
 #: ../../source/socket/tcp.rst:11
 msgid "Echo Server"
-msgstr ""
+msgstr "Servidor Echo"
 
 #: ../../source/socket/tcp.rst:13
 msgid ""
@@ -41,19 +46,30 @@ msgid ""
 "address is ``localhost``, referring to the current server, and the port "
 "number is 10000."
 msgstr ""
+"Este programa de ejemplo, basado en el de la documentación de la "
+"librería estándar, recibe mensajes entrantes y los echo de vuelta al "
+"remitente. Comienza creando un socket TCP/IP, entonces ``bind()`` se "
+"utiliza para asociar el socket con la dirección del servidor. En este "
+"caso, la dirección es ``localhost``, referente al servidor actual, y el "
+"número de puerto es 10000."
 
 #: ../../source/socket/tcp.rst
 msgid "socket_echo_server.py"
-msgstr ""
+msgstr "socket_echo_server.py"
 
 #: ../../source/socket/tcp.rst:25
 msgid ""
 "Calling ``listen()`` puts the socket into server mode, and ``accept()`` "
 "waits for an incoming connection.  The integer argument is the number of "
-"connections the system should queue up in the background before rejecting"
-" new clients.  This example only expects to work with one connection at a"
-" time."
+"connections the system should queue up in the background before "
+"rejecting new clients.  This example only expects to work with one "
+"connection at a time."
 msgstr ""
+"Llamar ``listen()`` pone el socket en modo servidor, y ``accept()`` "
+"espera una conexión entrante. El argumento entero es el número de "
+"conexiones que el sistema debe encolar en segundo plano antes de "
+"rechazar nuevos clientes. Este ejemplo sólo espera trabajar con una "
+"conexión a la vez."
 
 #: ../../source/socket/tcp.rst:31
 msgid ""
@@ -62,6 +78,11 @@ msgid ""
 "different socket on another port (assigned by the kernel). Data is read "
 "from the connection with ``recv()`` and transmitted with ``sendall()``."
 msgstr ""
+"``accept()`` devuelve una conexión abierta entre el servidor y el "
+"cliente, junto con la dirección del cliente. La conexión es en realidad "
+"un socket diferente en otro puerto (asignado por el kernel). Los datos "
+"se leen desde la conexión con ``recv()`` y se transmiten con "
+"``sendall()``."
 
 #: ../../source/socket/tcp.rst:37
 msgid ""
@@ -70,10 +91,14 @@ msgid ""
 "to ensure that ``close()`` is always called, even in the event of an "
 "error."
 msgstr ""
+"Cuando se termina la comunicación con un cliente, es necesario limpiar "
+"la conexión usando ``close()``. Este ejemplo usa un bloque ``try: "
+"finally`` para asegurar que ``close()`` siempre se llama, incluso en "
+"caso de error."
 
 #: ../../source/socket/tcp.rst:43
 msgid "Echo Client"
-msgstr ""
+msgstr "Cliente Echo"
 
 #: ../../source/socket/tcp.rst:45
 msgid ""
@@ -81,10 +106,13 @@ msgid ""
 "server does.  Instead of binding to a port and listening, it uses "
 "``connect()`` to attach the socket directly to the remote address."
 msgstr ""
+"El programa cliente configura su ``socket`` de forma diferente a como lo "
+"hace un servidor. En lugar de enlazar a un puerto y escuchar, utiliza "
+"``connect()`` para conectar el socket directamente a la dirección remota."
 
 #: ../../source/socket/tcp.rst
 msgid "socket_echo_client.py"
-msgstr ""
+msgstr "socket_echo_client.py"
 
 #: ../../source/socket/tcp.rst:54
 msgid ""
@@ -93,27 +121,38 @@ msgid ""
 "the server. When the entire message is sent and a copy received, the "
 "socket is closed to free up the port."
 msgstr ""
+"Una vez establecida la conexión, los datos pueden ser enviados a través "
+"del ``socket`` con ``sendall()`` y recibidos con ``recv()``, igual que "
+"en el servidor. Cuando se envía todo el mensaje y se recibe una copia, "
+"el socket se cierra para liberar el puerto."
 
 #: ../../source/socket/tcp.rst:60
 msgid "Client and Server Together"
-msgstr ""
+msgstr "Cliente y Servidor Juntos"
 
 #: ../../source/socket/tcp.rst:62
 msgid ""
-"The client and server should be run in separate terminal windows, so they"
-" can communicate with each other.  The server output shows the incoming "
-"connection and data, as well as the response sent back to the client."
+"The client and server should be run in separate terminal windows, so "
+"they can communicate with each other.  The server output shows the "
+"incoming connection and data, as well as the response sent back to the "
+"client."
 msgstr ""
+"El cliente y el servidor deben ejecutarse en ventanas de terminal "
+"separadas, para que puedan comunicarse entre sí. La salida del servidor "
+"muestra la conexión entrante y los datos, así como la respuesta enviada "
+"al cliente."
 
 #: ../../source/socket/tcp.rst:85
 msgid ""
 "The client output shows the outgoing message and the response from the "
 "server."
 msgstr ""
+"La salida del cliente muestra el mensaje saliente y la respuesta del "
+"servidor."
 
 #: ../../source/socket/tcp.rst:101
 msgid "Easy Client Connections"
-msgstr ""
+msgstr "Conexiones de Clientes Sencillas."
 
 #: ../../source/socket/tcp.rst:103
 msgid ""
@@ -122,23 +161,34 @@ msgid ""
 "argument, a two-value tuple containing the address of the server, and "
 "derives the best address to use for the connection."
 msgstr ""
+"Los clientes TCP/IP pueden ahorrar algunos pasos utilizando la función "
+"conveniente ``create_connection()`` para conectarse a un servidor. La "
+"función toma un argumento, una tupla de dos valores que contiene la "
+"dirección del servidor, y obtiene la mejor dirección a utilizar para la "
+"conexión."
 
 #: ../../source/socket/tcp.rst
 msgid "socket_echo_client_easy.py"
-msgstr ""
+msgstr "socket_echo_client_easy.py"
 
 #: ../../source/socket/tcp.rst:112
 msgid ""
 "``create_connection()`` uses ``getaddrinfo()`` to find candidate "
 "connection parameters, and returns a ``socket`` opened with the first "
-"configuration that creates a successful connection.  The :attr:`family`, "
-":attr:`type`, and :attr:`proto` attributes can be examined to determine "
-"the type of ``socket`` being returned."
+"configuration that creates a successful connection.  The :attr:"
+"`family`, :attr:`type`, and :attr:`proto` attributes can be examined to "
+"determine the type of ``socket`` being returned."
 msgstr ""
+"``create_connection()`` utiliza ``getaddrinfo()`` para encontrar "
+"parámetros de conexión candidatos y devuelve un ``socket`` abierto con "
+"la primera configuración que crea una conexión satisfactoria. Los "
+"atributos :attr:`family`, :attr:`type`, y :attr:`proto` pueden ser "
+"examinados para determinar el tipo de ``socket`` que está siendo "
+"devuelto."
 
 #: ../../source/socket/tcp.rst:134
 msgid "Choosing an Address for Listening"
-msgstr ""
+msgstr "Elegir una Dirección de Escucha"
 
 #: ../../source/socket/tcp.rst:136
 msgid ""
@@ -150,36 +200,50 @@ msgid ""
 "example modifies the echo server to listen on an address specified via a "
 "command line argument."
 msgstr ""
+"Es importante vincular un servidor a la dirección correcta, para que los "
+"clientes puedan comunicarse con ella. Los ejemplos anteriores utilizan "
+"todos ``'localhost'`` como la dirección IP, lo que limita las conexiones "
+"a los clientes que se ejecutan en el mismo servidor. Utilice una "
+"dirección pública del servidor, tales como el valor devuelto por "
+"``gethostname()``, para permitir que otros hosts se conecten. Este "
+"ejemplo modifica el servidor de echo para que escuche en una dirección "
+"especificada mediante un argumento de línea de comandos."
 
 #: ../../source/socket/tcp.rst
 msgid "socket_echo_server_explicit.py"
-msgstr ""
+msgstr "socket_echo_server_explicit.py"
 
 #: ../../source/socket/tcp.rst:148
 msgid ""
 "A similar modification to the client program is needed before the server "
 "can be tested."
 msgstr ""
+"Una modificación similar al programa cliente es necesaria antes de que "
+"se pueda probar el servidor."
 
 #: ../../source/socket/tcp.rst
 msgid "socket_echo_client_explicit.py"
-msgstr ""
+msgstr "socket_echo_client_explicit.py"
 
 #: ../../source/socket/tcp.rst:155
 msgid ""
 "After starting the server with the argument ``hubert``, the ``netstat`` "
 "command shows it listening on the address for the named host."
 msgstr ""
+"Después de iniciar el servidor con el argumento ``hubert``, el comando "
+"``netstat`` lo muestra escuchando en la dirección del host con nombre."
 
 #: ../../source/socket/tcp.rst:175
 msgid ""
-"Running the client on another host, passing ``hubert.hellfly.net`` as the"
-" host where the server is running, produces:"
+"Running the client on another host, passing ``hubert.hellfly.net`` as "
+"the host where the server is running, produces:"
 msgstr ""
+"Ejecutando el cliente en otro host, pasando ``hubert.hellfly.net`` como "
+"host donde se ejecuta el servidor, produce:"
 
 #: ../../source/socket/tcp.rst:194
 msgid "And the server output is:"
-msgstr ""
+msgstr "La salida del servidor es:"
 
 #: ../../source/socket/tcp.rst:213
 msgid ""
@@ -187,15 +251,24 @@ msgid ""
 "than one IP address.  Rather than running separate copies of a service "
 "bound to each IP address, use the special address ``INADDR_ANY`` to "
 "listen on all addresses at the same time.  Although ``socket`` defines a "
-"constant for ``INADDR_ANY``, it is an integer value and must be converted"
-" to a dotted-notation string address before it can be passed to "
+"constant for ``INADDR_ANY``, it is an integer value and must be "
+"converted to a dotted-notation string address before it can be passed to "
 "``bind()``.  As a shortcut, use \"``0.0.0.0``\" or an empty string "
 "(``''``) instead of doing the conversion."
 msgstr ""
+"Muchos servidores tienen más de una interfaz de red y, por lo tanto, más "
+"de una dirección IP. En lugar de ejecutar copias separadas de un "
+"servicio enlazado a cada dirección IP, utilice la dirección especial "
+"``INADDR_ANY`` para escuchar en todas las direcciones al mismo tiempo. "
+"Aunque ``socket`` define una constante para ``INADDR_ANY``, es un valor "
+"entero y debe ser convertido en una dirección de cadena de notación "
+"punteada antes de que se pueda pasar a ``bind()``. Como atajo, use "
+"\"``0.0.0.0``\" o una cadena vacía (``''``) en lugar de realizar la "
+"conversión."
 
 #: ../../source/socket/tcp.rst
 msgid "socket_echo_server_any.py"
-msgstr ""
+msgstr "socket_echo_server_any.py"
 
 #: ../../source/socket/tcp.rst:226
 msgid ""
@@ -204,4 +277,7 @@ msgid ""
 "``netstat`` again shows it listening for incoming connections on any "
 "address."
 msgstr ""
-
+"Para ver la dirección actual que está siendo utilizada por un socket, "
+"llame a su método ``getsockname()``. Después de iniciar el servicio, "
+"ejecutar ``netstat`` nuevamente muestra que escucha las conexiones "
+"entrantes en cualquier dirección."
