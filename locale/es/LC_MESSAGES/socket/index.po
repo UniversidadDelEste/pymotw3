@@ -3,27 +3,28 @@
 # This file is distributed under the same license as the PyMOTW-3 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyMOTW-3 \n"
+"Project-Id-Version: PyMOTW-3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-05-07 11:53-0500\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: Francisco Silva G. <francisco.silva.garces@gmail.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #: ../../source/socket/index.rst:3
 msgid "socket --- Network Communication"
-msgstr ""
+msgstr "socket --- Comunicaciones de Red"
 
 #: ../../source/socket/index.rst:8
 msgid "Provides access to network communication"
-msgstr ""
+msgstr "Provee acceso a las comunicaciones de red"
 
 #: ../../source/socket/index.rst:10
 msgid ""
@@ -33,47 +34,67 @@ msgid ""
 "for network-related tasks such as converting a server's name to an "
 "address and formatting data to be sent across the network."
 msgstr ""
+"El módulo ``socket`` expone la API C de bajo nivel para comunicarse a "
+"través de una red utilizando la interfaz socket de BSD. Incluye la clase "
+"``socket``, para manejar el canal de datos, e incluye también funciones "
+"para tareas relacionadas con la red, como la conversión del nombre de un "
+"servidor en una dirección y el formateo de datos a ser enviados a través "
+"de la red."
 
 #: ../../source/socket/index.rst:30
 msgid ":pydoc:`socket`"
-msgstr ""
+msgstr ":pydoc:`socker`"
 
+# no estoy seguro de esta traducción de "porting"
+# Se refiere a "puerto" o "portar de una versión a otra"
 #: ../../source/socket/index.rst:32
 msgid ":ref:`Python 2 to 3 porting notes for socket <porting-socket>`"
-msgstr ""
+msgstr ":ref:`Python 2 a 3 notas de puertos para socket <porting-socket>`"
 
+# Esta es otra traducción :
+# :mod:`select` -- Prueba de un socket para ver si está listo para ser leido o escrito por E/O sin bloqueo.
 #: ../../source/socket/index.rst:34
 msgid ""
 ":mod:`select` -- Testing a socket to see if it is ready for reading or "
 "writing for non-blocking I/O."
 msgstr ""
+":mod:`select` -- Prueba de un socket para ver si está listo para leer o "
+"escribir a E/O sin bloqueo."
 
 #: ../../source/socket/index.rst:37
 msgid ":mod:`SocketServer` -- Framework for creating network servers."
-msgstr ""
+msgstr ":mod:`SocketServer` - Framework para crear servidores de red."
 
 #: ../../source/socket/index.rst:39
 msgid ":mod:`asyncio` -- Asynchronous I/O and concurrency tools."
-msgstr ""
+msgstr ":mod:`asyncio` -- E/S Asíncronas y herramientas de concurrencia."
 
 #: ../../source/socket/index.rst:41
 msgid ""
 ":mod:`urllib` and :mod:`urllib2` -- Most network clients should use the "
 "more convenient libraries for accessing remote resources through a URL."
 msgstr ""
+":mod:`urllib` y :mod:`urllib2` -- La mayoría de los clientes de red "
+"deberían usar las librerías más convenientes para acceder a recursos "
+"remotos a través de una URL."
 
 #: ../../source/socket/index.rst:45
 msgid ""
-"`Socket Programming HOWOTO "
-"<https://docs.python.org/3/howto/sockets.html>`__ -- An instructional "
-"guide by Gordon McMillan, included in the standard library documentation."
+"`Socket Programming HOWOTO <https://docs.python.org/3/howto/sockets."
+"html>`__ -- An instructional guide by Gordon McMillan, included in the "
+"standard library documentation."
 msgstr ""
+"`Socket Programming HOWOTO <https://docs.python.org/3/howto/sockets."
+"html>`__ -- Una guía de instrucciones de Gordon McMillan, incluida en la "
+"documentación de la librería estándar."
 
 #: ../../source/socket/index.rst:50
 msgid ""
-"*Foundations of Python Network Programming, 3/E* -- By Brandon Rhodes and"
-" John Goerzen. Published by Apress, 2014. ISBN-10: 1430258543."
+"*Foundations of Python Network Programming, 3/E* -- By Brandon Rhodes "
+"and John Goerzen. Published by Apress, 2014. ISBN-10: 1430258543."
 msgstr ""
+"*Foundations of Python Network Programming, 3/E* - Por Brandon Rhodes y "
+"John Goerzen. Publicado por Apress, 2014. ISBN-10: 1430258543."
 
 #: ../../source/socket/index.rst:54
 msgid ""
@@ -81,4 +102,6 @@ msgid ""
 "By W. Richard Stevens, Bill Fenner, and Andrew M. Rudoff. Published by "
 "Addison-Wesley Professional, 2004. ISBN-10: 0131411551"
 msgstr ""
-
+"*Unix Network Programming, Volume 1: The Sockets Networking API, 3/E* -- "
+"Por W. Richard Stevens, Bill Fenner, y Andrew M. Rudoff. Publicado por "
+"Addison-Wesley Professional, 2004. ISBN-10: 0131411551"
