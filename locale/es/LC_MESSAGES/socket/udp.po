@@ -3,82 +3,100 @@
 # This file is distributed under the same license as the PyMOTW-3 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyMOTW-3 \n"
+"Project-Id-Version: PyMOTW-3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-24 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-05-07 15:40-0500\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: Francisco Silva G. <francisco.silva.garces@gmail.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #: ../../source/socket/udp.rst:3
 msgid "User Datagram Client and Server"
-msgstr ""
+msgstr "Cliente y Servidor de Datagrama de Usuario"
 
 #: ../../source/socket/udp.rst:5
 msgid ""
 "The user datagram protocol (UDP) works differently from TCP/IP.  Where "
 "TCP is a *stream oriented* protocol, ensuring that all of the data is "
-"transmitted in the right order, UDP is a *message oriented* protocol. UDP"
-" does not require a long-lived connection, so setting up a UDP socket is "
-"a little simpler.  On the other hand, UDP messages must fit within a "
+"transmitted in the right order, UDP is a *message oriented* protocol. "
+"UDP does not require a long-lived connection, so setting up a UDP socket "
+"is a little simpler.  On the other hand, UDP messages must fit within a "
 "single datagram (for IPv4, that means they can only hold 65,507 bytes "
 "because the 65,535 byte packet also includes header information) and "
 "delivery is not guaranteed as it is with TCP."
 msgstr ""
+"El protocolo de datagramas de usuario (UDP) funciona de forma diferente "
+"a TCP/IP. Donde TCP es un protocolo *orientado a flujo*, asegurando que "
+"todos los datos se transmiten en el orden correcto, UDP es un protocolo "
+"*orientado a mensajes*. UDP no requiere una conexión de larga duración, "
+"por lo que la configuración de un socket UDP es un poco más simple. Por "
+"otro lado, los mensajes UDP deben encajar dentro de un solo datagrama "
+"(para IPv4, lo que significa que sólo pueden contener 65.507 bytes "
+"porque el paquete de 65.535 bytes también incluye información de "
+"encabezado) y la entrega no está garantizada como lo es con TCP."
 
 #: ../../source/socket/udp.rst:15
 msgid "Echo Server"
-msgstr ""
+msgstr "Servidor Echo"
 
 #: ../../source/socket/udp.rst:17
 msgid ""
 "Since there is no connection, per se, the server does not need to listen "
-"for and accept connections.  It only needs to use ``bind()`` to associate"
-" its socket with a port, and then wait for individual messages."
+"for and accept connections.  It only needs to use ``bind()`` to "
+"associate its socket with a port, and then wait for individual messages."
 msgstr ""
+"Dado que no hay conexión, per se, el servidor no necesita escuchar y "
+"aceptar conexiones. Sólo necesita usar ``bind()`` para asociar su socket "
+"con un puerto, y luego esperar por los mensajes individuales."
 
 #: ../../source/socket/udp.rst
 msgid "socket_echo_server_dgram.py"
-msgstr ""
+msgstr "socket_echo_server_dgram.py"
 
 #: ../../source/socket/udp.rst:26
 msgid ""
-"Messages are read from the socket using ``recvfrom()``, which returns the"
-" data as well as the address of the client from which it was sent."
+"Messages are read from the socket using ``recvfrom()``, which returns "
+"the data as well as the address of the client from which it was sent."
 msgstr ""
+"Los mensajes se leen desde el socket usando ``recvfrom()``, que devuelve "
+"los datos, así como la dirección del cliente desde el cual se envió."
 
 #: ../../source/socket/udp.rst:31
 msgid "Echo Client"
-msgstr ""
+msgstr "Cliente Echo"
 
 #: ../../source/socket/udp.rst:33
 msgid ""
-"The UDP echo client is similar the server, but does not use ``bind()`` to"
-" attach its socket to an address.  It uses ``sendto()`` to deliver its "
+"The UDP echo client is similar the server, but does not use ``bind()`` "
+"to attach its socket to an address.  It uses ``sendto()`` to deliver its "
 "message directly to the server, and ``recvfrom()`` to receive the "
 "response."
 msgstr ""
+"El cliente de echo UDP es similar al servidor, pero no utiliza "
+"``bind()`` para conectar su socket a una dirección. Utiliza ``sendto()`` "
+"para enviar su mensaje directamente al servidor, y ``recvfrom()`` para "
+"recibir la respuesta."
 
 #: ../../source/socket/udp.rst
 msgid "socket_echo_client_dgram.py"
-msgstr ""
+msgstr "socket_echo_client_dgram.py"
 
 #: ../../source/socket/udp.rst:43
 msgid "Client and Server Together"
-msgstr ""
+msgstr "Cliente y Servidor Juntos"
 
 #: ../../source/socket/udp.rst:45
 msgid "Running the server produces:"
-msgstr ""
+msgstr "Corriendo el servidor produce:"
 
 #: ../../source/socket/udp.rst:59
 msgid "The client output is:"
-msgstr ""
-
+msgstr "La salida del cliente es:"
